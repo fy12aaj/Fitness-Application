@@ -8,7 +8,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -27,17 +26,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-qS-1st">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Item" id="dTH-dl-IJr"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ynU-XP-QtI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="1ub-dF-b2m"/>
+                            <constraint firstItem="EgS-qS-1st" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="5yZ-jK-Jyu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EgS-qS-1st" secondAttribute="bottom" id="Gsl-0I-iCC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ynU-XP-QtI" secondAttribute="trailing" constant="-16" id="Xor-kJ-3Bg"/>
                             <constraint firstItem="ynU-XP-QtI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fmB-go-FFM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EgS-qS-1st" secondAttribute="trailing" constant="-16" id="gZf-zA-TbP"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33" y="600"/>
         </scene>
