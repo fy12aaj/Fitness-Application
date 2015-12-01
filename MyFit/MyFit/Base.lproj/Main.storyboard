@@ -31,6 +31,8 @@
                                 <animations/>
                                 <items>
                                     <barButtonItem title="Item" id="dTH-dl-IJr"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="M6I-vW-sD1"/>
+                                    <barButtonItem title="Item" id="Ewp-LL-Wej"/>
                                 </items>
                             </toolbar>
                         </subviews>
