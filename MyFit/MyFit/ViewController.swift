@@ -14,25 +14,25 @@ class ViewController: UIViewController {
     
     var count = 0
     
-    func updateTime() { // Func updateTime
+    func updateTime() { // Func updateTime.
         
-        count++
-        Time.text = "\(count)"
+        count++ // Add one to the count.
+        Time.text = "\(count)" // Convert count to int.
     
     }
     
-    @IBAction func Rest(sender: AnyObject) {
+    @IBAction func Rest(sender: AnyObject) { // rest page should be changed soon.
         
-        timer.invalidate()
+        timer.invalidate() // stop the time.
         
-        count = 0
+        count = 0 // rest time to 0.
         
-        Time.text = "0"
+        Time.text = "0" // print 0 to user.
     }
     
     @IBOutlet var Time: UILabel!
     
-    @IBAction func Finish(sender: AnyObject) {
+    @IBAction func Finish(sender: AnyObject) { // this should take us to the next page.
         
     }
     
