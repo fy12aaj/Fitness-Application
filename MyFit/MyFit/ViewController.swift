@@ -12,18 +12,48 @@ class ViewController: UIViewController {
     
     var timer = NSTimer() // Object that control the time according the var.
     
-    var count = 0 // Var count start from 0 for the timer object.
+    var count = 0
     
-    func result() { // Results function
+    func updateTime() { // Func updateTime
         
-        count++ // count 1.
-        println(count) // appear in the log.
+        count++
+        Time.text = "\(count)"
+    
     }
+    
+    @IBAction func Rest(sender: AnyObject) {
+        
+        timer.invalidate()
+        
+        count = 0
+        
+        Time.text = "0"
+    }
+    
+    @IBOutlet var Time: UILabel!
+    
+    @IBAction func Finish(sender: AnyObject) {
+        
+    }
+    
+    
+    @IBAction func Play(sender: AnyObject) {
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true) // timer object which tick every 1 secound with one view controler, method results run every secound. UpTime.
+    }
+    
+    
+    @IBAction func Pause(sender: AnyObject){
+        timer.invalidate()
+        
+
+    }
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true) // timer object which tick every 1 secound with one view controler, method results run every secound.
         
     }
 
