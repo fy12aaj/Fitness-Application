@@ -13,15 +13,30 @@ class ViewController: UIViewController {
     
     var timer = NSTimer() // Object that control the time according the var.
     
-    var count = 0 // set count to 0.
+    var count = 0.00 // set count to 0.
     
     func updateTime() { // Func updateTime.
         
-        count++ // Add one to the count.
-        Time.text = "\(count)" // Convert count to int.
-    
+        count = count + 0.01 // Add one to the count.
+        
+        var output = Double(round(100*count)/100)
+        
+        Time.text = "\(output)"
     }
     
+    //MARK: Outlets
+    
+    @IBOutlet var Time: UILabel!
+    @IBOutlet weak var FinishButton: UIButton!
+    @IBOutlet weak var Finish: UIButton!
+    
+    //MAKE: Actions
+    @IBAction func finishRun(sender: UIButton) {
+    timer.invalidate()
+    }
+    
+    
+    //MARK: Functions
     
     @IBAction func Rest(sender: AnyObject) { // rest page should be changed soon.
         
@@ -29,21 +44,14 @@ class ViewController: UIViewController {
         
         count = 0 // rest time to 0.
         
-        Time.text = "0" // print 0 to user.
-    }
-    
-    @IBOutlet var Time: UILabel!
-    
-    @IBAction func Finish(sender: AnyObject) { // this should take us to the next page.
-        
+        Time.text = "0.00" // print 0 to user.
     }
     
     
     @IBAction func Play(sender: AnyObject) {
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true) // timer object which tick every 1 secound with one view controler, method results run every secound. UpTime.
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true) // timer object which tick every 0.01 secound with one view controler, method results run every secound. UpTime.
     }
-    
     
     @IBAction func Pause(sender: AnyObject){
         timer.invalidate()
