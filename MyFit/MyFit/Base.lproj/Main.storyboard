@@ -24,7 +24,7 @@
                                     <navigationItem title="Running" id="Lkp-oZ-G3x">
                                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="1Vn-eX-rPj">
                                             <connections>
-                                                <action selector="Rest:" destination="BYZ-38-t0r" id="LU3-Ht-Sd5"/>
+                                                <action selector="Rest:" destination="BYZ-38-t0r" id="ckd-8g-eSq"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="stop" id="AOg-fi-B6P">
@@ -52,7 +52,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4v-VP-FdJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4v-VP-FdJ">
                                 <rect key="frame" x="161" y="139" width="133" height="128"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>

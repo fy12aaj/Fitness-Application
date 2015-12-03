@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
     
     var timer = NSTimer() // Object that control the time according the var.
     
-    var count = 0
+    var count = 0 // set count to 0.
     
     func updateTime() { // Func updateTime.
         
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
         Time.text = "\(count)" // Convert count to int.
     
     }
+    
     
     @IBAction func Rest(sender: AnyObject) { // rest page should be changed soon.
         
@@ -50,7 +52,6 @@ class ViewController: UIViewController {
     }
     
     
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
