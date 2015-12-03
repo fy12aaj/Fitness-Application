@@ -27,31 +27,9 @@
                                                 <action selector="Rest:" destination="BYZ-38-t0r" id="ckd-8g-eSq"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="AOg-fi-B6P">
-                                            <connections>
-                                                <segue destination="jY3-Ep-EFq" kind="modal" id="F7K-Af-Zfb"/>
-                                            </connections>
-                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-qS-1st">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <animations/>
-                                <items>
-                                    <barButtonItem systemItem="play" id="dTH-dl-IJr">
-                                        <connections>
-                                            <action selector="Play:" destination="BYZ-38-t0r" id="QAk-gf-7vt"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="M6I-vW-sD1"/>
-                                    <barButtonItem systemItem="pause" id="Ewp-LL-Wej">
-                                        <connections>
-                                            <action selector="Pause:" destination="BYZ-38-t0r" id="1iz-ak-m3f"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4v-VP-FdJ">
                                 <rect key="frame" x="161" y="139" width="133" height="128"/>
                                 <animations/>
@@ -104,8 +82,36 @@
                                 <connections>
                                     <action selector="Finish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuy-7V-rgA"/>
                                     <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgA-79-kAC"/>
+                                    <segue destination="zWP-qW-SFE" kind="modal" id="zRe-gF-eYi"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZJ-kz-oBa">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Home" id="Y07-b0-IuB"/>
+                                    <tabBarItem title="Calander" id="vGz-eR-BwR"/>
+                                    <tabBarItem title="BMI" id="7ax-mc-oIu"/>
+                                </items>
+                            </tabBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-qS-1st">
+                                <rect key="frame" x="0.0" y="452" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="dTH-dl-IJr">
+                                        <connections>
+                                            <action selector="Play:" destination="BYZ-38-t0r" id="QAk-gf-7vt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="M6I-vW-sD1"/>
+                                    <barButtonItem systemItem="pause" id="Ewp-LL-Wej">
+                                        <connections>
+                                            <action selector="Pause:" destination="BYZ-38-t0r" id="1iz-ak-m3f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -125,7 +131,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="551"/>
+            <point key="canvasLocation" x="133" y="551"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BTv-9M-r5Y">
+            <objects>
+                <viewController id="zWP-qW-SFE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y64-RM-UIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="p8v-KB-L5w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yHY-xs-8HN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-RU-bak">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Activity" id="gg3-CF-9yR">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="W55-Wv-hZ3"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K2N-FG-1dW">
+                                <rect key="frame" x="0.0" y="248" width="320" height="148"/>
+                                <animations/>
+                            </mapView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seQ-1J-hDu">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Home" id="0dg-Ql-hyb"/>
+                                    <tabBarItem title="Calander" id="HLT-Rt-Ij2"/>
+                                    <tabBarItem title="BMI" id="xPh-5x-Xc0"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4qe-qj-c6T"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UZ-rb-R6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="551"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hSK-Y3-FLZ">
+            <objects>
+                <viewController id="Dps-kx-k3U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DrC-RF-i5w"/>
+                        <viewControllerLayoutGuide type="bottom" id="rrV-L7-ulC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1r-4f-htO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-0f-97v">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Calander" id="yWv-rV-dc9"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkO-hu-zkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1225"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ASC-UO-dez">
@@ -166,6 +247,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQE-Za-Qf9">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Home" id="LKA-RX-jaw"/>
+                                    <tabBarItem title="Calander" id="erd-jl-zXy"/>
+                                    <tabBarItem title="BMI" id="eCW-ww-Zdw"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ad-tu-qnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="551"/>
+            <point key="canvasLocation" x="-261" y="551"/>
         </scene>
     </scenes>
 </document>
