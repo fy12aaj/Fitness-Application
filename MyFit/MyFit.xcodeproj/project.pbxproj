@@ -13,6 +13,7 @@
 		B837FEF91C0E580B0086428F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B837FEF81C0E580B0086428F /* Images.xcassets */; };
 		B837FEFC1C0E580B0086428F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B837FEFA1C0E580B0086428F /* LaunchScreen.xib */; };
 		B837FF081C0E580B0086428F /* MyFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FF071C0E580B0086428F /* MyFitTests.swift */; };
+		B8A035991C128F63001E42EC /* ViewCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A035981C128F63001E42EC /* ViewCalculate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B837FF011C0E580B0086428F /* MyFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B837FF061C0E580B0086428F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B837FF071C0E580B0086428F /* MyFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitTests.swift; sourceTree = "<group>"; };
+		B8A035981C128F63001E42EC /* ViewCalculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCalculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				B837FEF11C0E580B0086428F /* AppDelegate.swift */,
 				B837FEF31C0E580B0086428F /* ViewController.swift */,
 				B837FEF51C0E580B0086428F /* Main.storyboard */,
+				B8A035981C128F63001E42EC /* ViewCalculate.swift */,
 				B837FEF81C0E580B0086428F /* Images.xcassets */,
 				B837FEFA1C0E580B0086428F /* LaunchScreen.xib */,
 				B837FEEF1C0E580B0086428F /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A035991C128F63001E42EC /* ViewCalculate.swift in Sources */,
 				B837FEF41C0E580B0086428F /* ViewController.swift in Sources */,
 				B837FEF21C0E580B0086428F /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,7 @@
 				B837FF0D1C0E580B0086428F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B837FF0E1C0E580B0086428F /* Build configuration list for PBXNativeTarget "MyFitTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				B837FF101C0E580B0086428F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
