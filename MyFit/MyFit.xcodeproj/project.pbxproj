@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E99A9151C13737000999A33 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E99A9141C13737000999A33 /* logo-icon.png */; };
+		5EF3C0621C1391C700FBA144 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3C0611C1391C700FBA144 /* logo-icon.png */; };
 		B837FEF21C0E580B0086428F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FEF11C0E580B0086428F /* AppDelegate.swift */; };
 		B837FEF41C0E580B0086428F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FEF31C0E580B0086428F /* ViewController.swift */; };
 		B837FEF71C0E580B0086428F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837FEF51C0E580B0086428F /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		5E99A9141C13737000999A33 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-icon.png"; path = "../../../../AppImages/logo-icon.png"; sourceTree = "<group>"; };
+		5EF3C0611C1391C700FBA144 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-icon.png"; path = "../../../../AppImages/logo-icon.png"; sourceTree = "<group>"; };
 		B837FEEC1C0E580B0086428F /* MyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B837FEF01C0E580B0086428F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B837FEF11C0E580B0086428F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				B837FEF51C0E580B0086428F /* Main.storyboard */,
 				B8A035981C128F63001E42EC /* ViewCalculate.swift */,
 				B837FEF81C0E580B0086428F /* Images.xcassets */,
+				5EF3C0611C1391C700FBA144 /* logo-icon.png */,
 				B837FEFA1C0E580B0086428F /* LaunchScreen.xib */,
 				B837FEEF1C0E580B0086428F /* Supporting Files */,
 			);
@@ -200,6 +203,7 @@
 			files = (
 				B837FEF71C0E580B0086428F /* Main.storyboard in Resources */,
 				B837FEFC1C0E580B0086428F /* LaunchScreen.xib in Resources */,
+				5EF3C0621C1391C700FBA144 /* logo-icon.png in Resources */,
 				5E99A9151C13737000999A33 /* logo-icon.png in Resources */,
 				B837FEF91C0E580B0086428F /* Images.xcassets in Resources */,
 			);
