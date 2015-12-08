@@ -10,7 +10,7 @@ import UIKit
 
 class BMICalculator: UIViewController {
     
-
+    // Outlets.
     @IBOutlet weak var heightTextField: UITextField!
     @IBOutlet weak var weightSlider: UISlider!
     @IBOutlet weak var genderControl: UISegmentedControl!
