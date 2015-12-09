@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Breaking point for Splash Screen.
         
         
-        // UITabBar colors.
+        // MARK: UITabBar colors.
         UITabBar.appearance().barTintColor = UIColor.blackColor() // Bar Color
         UITabBar.appearance().tintColor = UIColor.whiteColor() // tint( logo ) Color.
         
-        // NavigationBar colors.
+        // MARK: NavigationBar colors.
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         UINavigationBar.appearance().barStyle = UIBarStyle.BlackTranslucent
         

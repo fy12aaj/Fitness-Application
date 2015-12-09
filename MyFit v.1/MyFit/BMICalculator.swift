@@ -10,20 +10,20 @@ import UIKit
 
 class BMICalculator: UIViewController {
     
-    // Outlets.
+    // MARK: Outlets.
     @IBOutlet weak var heightTextField: UITextField!
     @IBOutlet weak var weightSlider: UISlider!
     @IBOutlet weak var genderControl: UISegmentedControl!
     @IBOutlet weak var weightLabel: UILabel!
     
     
-    
+    // MARK: Actions
     @IBAction func weightChanged(sender: AnyObject) {
         weightLabel.text = String(stringInterpolationSegment: weightSlider.value) + "lbs"
     }
     
     
-    
+    // MARK: Functions
     override func canBecomeFirstResponder() -> Bool {
         return true
     }
@@ -43,6 +43,7 @@ class BMICalculator: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+/*
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         let detailController = segue.destinationViewController as! BMIResultViewController
         detailController.height = Int(heightTextField.text!)
@@ -56,5 +57,6 @@ class BMICalculator: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
+*/
     
 }

@@ -11,15 +11,14 @@ import UIKit
 
 class BMIResultViewController: UIViewController {
     
-    
+    // MARK: OUTLET
     @IBOutlet weak var bmiGenderField: UILabel!
-    
-
     @IBOutlet weak var bmiResultField: UILabel!
     var height:  Int = 0
     var weight:  Int = 0   // variable declaration
     var gender:  Int = 0
     
+    // MARK: Fucntions.
     override func viewDidLoad() {
         super.viewDidLoad()
         let res :  Int = (weight *  703) / ( height *  height) //  calculation formula
