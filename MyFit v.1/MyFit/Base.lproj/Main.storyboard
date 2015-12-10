@@ -340,6 +340,7 @@
                     <connections>
                         <outlet property="genderControl" destination="V1e-Cb-YhH" id="IEU-Go-nuo"/>
                         <outlet property="heightTextField" destination="Hk8-ai-iUJ" id="JcX-tt-faW"/>
+                        <outlet property="motionsegue" destination="6LJ-TE-76s" id="vAv-39-TPt"/>
                         <outlet property="weightLabel" destination="cqT-ww-CMB" id="5h0-cb-wFC"/>
                         <outlet property="weightSlider" destination="ML1-oz-Vla" id="fWl-Li-yqV"/>
                     </connections>
@@ -368,7 +369,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ5-NW-hej">
-                                <rect key="frame" x="118" y="318" width="179" height="191"/>
+                                <rect key="frame" x="118" y="201" width="179" height="191"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

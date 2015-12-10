@@ -24,7 +24,8 @@ class BMICalculator: UIViewController {
     
     
     // MARK: Functions
-    override func canBecomeFirstResponder() -> Bool {
+    
+    override func canBecomeFirstResponder() -> Bool{
         return true
     }
     

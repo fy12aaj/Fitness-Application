@@ -11,9 +11,11 @@ import UIKit
 
 class BMIResultViewController: UIViewController {
     
-    // MARK: OUTLET
+    // MARK: OutLet.
     @IBOutlet weak var bmiGenderField: UILabel!
     @IBOutlet weak var bmiResultField: UILabel!
+    
+    // MARK: Variables.
     var height:  Int = 0
     var weight:  Int = 0   // variable declaration
     var gender:  Int = 0
