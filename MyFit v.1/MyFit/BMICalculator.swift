@@ -45,6 +45,7 @@ class BMICalculator: UIViewController {
     }
     
 
+    /*
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         let detailController = segue.destinationViewController as! BMIResultViewController
         detailController.height = Int(heightTextField.text!)
@@ -58,6 +59,6 @@ class BMICalculator: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+*/
     
 }

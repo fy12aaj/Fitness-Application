@@ -32,6 +32,8 @@ class WaistRatioViewController: UIViewController {
             
         }
     }
+    
+    /*
     // MARK: Functions
     @IBAction func calCulateDown(sender: AnyObject) {
         let res :  Float = (Float(waistField.text!)! /  Float(heightField.text!)!)
@@ -64,5 +66,5 @@ class WaistRatioViewController: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
+    */
 }
