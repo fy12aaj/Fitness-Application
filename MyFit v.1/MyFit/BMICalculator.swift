@@ -15,6 +15,7 @@ class BMICalculator: UIViewController {
     @IBOutlet weak var weightSlider: UISlider!
     @IBOutlet weak var genderControl: UISegmentedControl!
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var motionsegue: UILabel!
     
     
     // MARK: Actions
@@ -29,11 +30,11 @@ class BMICalculator: UIViewController {
         return true
     }
     
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+    /*override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {
             performSegueWithIdentifier("showres", sender: self)
         }
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +46,25 @@ class BMICalculator: UIViewController {
     }
     
 
-    /*
+    
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    
         let detailController = segue.destinationViewController as! BMIResultViewController
-        detailController.height = Int(heightTextField.text!)
-        detailController.weight = Int(weightSlider.value)
-        detailController.gender = Int(genderControl.selectedSegmentIndex)
+        let a: Int? = (heightTextField.text!).toInt()
+        let b: Int = Int(weightSlider.value)
+        let c: Int? = (genderControl.selectedSegmentIndex)
+    
+        detailController.height = a!
+        detailController.weight = b
+        detailController.gender = c!
         
     }
     
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
-*/
+
     
 }
