@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Abdulaziz Jamal. All rights reserved.
 //
 
+import CoreData
 import UIKit
 import CoreLocation
 import HealthKit
@@ -35,6 +36,11 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     lazy var locations = [CLLocation]()
     lazy var timer = NSTimer()
     
+    var seconds = 0.0
+    var distance = 0.0
+    
+    //MARK: Load functions
+    
     override func viewWillAppear(animated: Bool) {
         locationManager.requestAlwaysAuthorization()
     }
@@ -58,9 +64,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     //MARK: Location Tracking
     
-    var seconds = 0.0
-    var distance = 0.0
-    
     func eachSecond(timer: NSTimer) {
         seconds++
         let secondsQuantity = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: seconds)
@@ -78,8 +81,54 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
+    //MARK: Saving the run
+    
+    
+    func saveRun() {
+        // 1
+        let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
+            inManagedObjectContext: NSManagedObject.managedObjectContext!) as! Run
+        savedRun.distance = distance
+        savedRun.duration = seconds
+        savedRun.timestamp = NSDate()
+        
+        // 2
+        var savedLocations = [Location]()
+        for location in locations {
+            let savedLocation = NSEntityDescription.insertNewObjectForEntityForName("Location",
+                inManagedObjectContext: managedObjectContext!) as! Location
+            savedLocation.timestamp = location.timestamp
+            savedLocation.latitude = location.coordinate.latitude
+            savedLocation.longitude = location.coordinate.longitude
+            savedLocations.append(savedLocation)
+        }
+        
+        savedRun.locations = NSOrderedSet(array: savedLocations)
+        run = savedRun
+        
+        // 3
+        var error: NSError?
+        let success = managedObjectContext!.save(&error)
+        if !success {
+            println("Could not save the run!")
+        }
+    }
+    
 }
 
 // MARK: - CLLocationManagerDelegate
 extension RunViewController: CLLocationManagerDelegate {
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        for location in locations as! [CLLocation] {
+            if location.horizontalAccuracy < 20 {
+                //update distance
+                if self.locations.count > 0 {
+                    distance += location.distanceFromLocation(self.locations.last)
+                }
+                
+                //save location
+                self.locations.append(location)
+            }
+        }
+    }
 }

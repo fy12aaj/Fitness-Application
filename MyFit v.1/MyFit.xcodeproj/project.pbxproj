@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B673CE901C1B112800A52755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6001C13D0590008F2BD /* Main.storyboard */; };
 		B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE951C1B135A00A52755 /* RunViewController.swift */; };
+		B673CE981C1B1E6000A52755 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE971C1B1E6000A52755 /* CalendarViewController.swift */; };
 		B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */; };
 		B824C0DE1C1788F300C6A1D3 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */; };
 		B824C0E01C18638300C6A1D3 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B824C0DF1C18638300C6A1D3 /* SplashScreen.png */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		B673CE971C1B1E6000A52755 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
 		B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		B824C0DF1C18638300C6A1D3 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		B8EFE5F91C13D0580008F2BD /* MyFit */ = {
 			isa = PBXGroup;
 			children = (
+				B673CE971C1B1E6000A52755 /* CalendarViewController.swift */,
 				B673CE951C1B135A00A52755 /* RunViewController.swift */,
 				B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */,
 				B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */,
@@ -277,6 +280,7 @@
 				B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */,
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
 				B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */,
+				B673CE981C1B1E6000A52755 /* CalendarViewController.swift in Sources */,
 				B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
