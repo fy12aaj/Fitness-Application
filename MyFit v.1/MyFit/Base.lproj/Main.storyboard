@@ -435,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8R-W0-gcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816" y="2245"/>
+            <point key="canvasLocation" x="2378" y="2047"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dw4-Wn-mSL">
@@ -525,6 +525,9 @@
                                 <state key="normal" title="WTH">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AMa-QX-Ak2" kind="show" id="GhL-PH-l33"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
