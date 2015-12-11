@@ -10,12 +10,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
+
 class ViewController: UIViewController {
     
     //MARK: Outlet
     @IBOutlet weak var theMap: MKMapView!
     @IBOutlet weak var theLabel: UILabel!
-    
     
     
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+   
 }
 

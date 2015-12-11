@@ -53,16 +53,17 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="theMap" destination="bRA-j4-hbm" id="oUW-OE-ujK"/>
+                        <outlet property="xcv" destination="8Qh-vo-qQ2" id="oGP-ll-DX8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878" y="353"/>
         </scene>
-        <!--View Controller-->
+        <!--Run View Controller-->
         <scene sceneID="eyt-Uw-sxE">
             <objects>
-                <viewController id="W74-my-gu4" sceneMemberID="viewController">
+                <viewController id="W74-my-gu4" customClass="RunViewController" customModule="MyFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EZn-bT-eFY"/>
                         <viewControllerLayoutGuide type="bottom" id="OAk-JI-axO"/>
@@ -109,11 +110,23 @@
                                     <navigationItem title="Running" id="ljZ-4C-IFj"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WS-hp-h7e">
+                                <rect key="frame" x="186" y="440" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="calorieLabel" destination="vOP-cK-NdO" id="uhU-7D-5E6"/>
+                        <outlet property="distanceLabel" destination="DqK-Ah-QDh" id="pxK-HY-IMn"/>
+                        <outlet property="paceLabel" destination="9WS-hp-h7e" id="Wlv-uP-O1g"/>
+                        <outlet property="timeLabel" destination="zxd-hu-xZL" id="zI9-3e-jye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlW-et-PFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

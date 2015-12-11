@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B673CE901C1B112800A52755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6001C13D0590008F2BD /* Main.storyboard */; };
+		B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE951C1B135A00A52755 /* RunViewController.swift */; };
 		B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */; };
 		B824C0DE1C1788F300C6A1D3 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */; };
 		B824C0E01C18638300C6A1D3 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B824C0DF1C18638300C6A1D3 /* SplashScreen.png */; };
@@ -19,7 +21,6 @@
 		B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */; };
 		B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */; };
 		B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FE1C13D0590008F2BD /* ViewController.swift */; };
-		B8EFE6021C13D0590008F2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6001C13D0590008F2BD /* Main.storyboard */; };
 		B8EFE6041C13D0590008F2BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6031C13D0590008F2BD /* Images.xcassets */; };
 		B8EFE6071C13D0590008F2BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6051C13D0590008F2BD /* LaunchScreen.xib */; };
 		B8EFE6131C13D0590008F2BD /* MyFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE6121C13D0590008F2BD /* MyFitTests.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunViewController.swift; path = MyFit/RunViewController.swift; sourceTree = "<group>"; };
 		B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
 		B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		B824C0DF1C18638300C6A1D3 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		B8EFE5EE1C13D0580008F2BD = {
 			isa = PBXGroup;
 			children = (
+				B673CE951C1B135A00A52755 /* RunViewController.swift */,
 				B8EFE61E1C13D3200008F2BD /* MapKit.framework */,
 				B8EFE61C1C13D1370008F2BD /* CoreLocation.framework */,
 				B8EFE5F91C13D0580008F2BD /* MyFit */,
@@ -241,12 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8EFE6021C13D0590008F2BD /* Main.storyboard in Resources */,
 				B824C0E81C186EC100C6A1D3 /* Icon-Spotlight-40@2x.png in Resources */,
 				B8EFE6071C13D0590008F2BD /* LaunchScreen.xib in Resources */,
 				B824C0E01C18638300C6A1D3 /* SplashScreen.png in Resources */,
 				B8EFE6041C13D0590008F2BD /* Images.xcassets in Resources */,
 				B824C0EC1C186ED600C6A1D3 /* Icon-76@2x.png in Resources */,
+				B673CE901C1B112800A52755 /* Main.storyboard in Resources */,
 				B824C0E41C186EAB00C6A1D3 /* Icon-60@3x.png in Resources */,
 				B824C0E71C186EC100C6A1D3 /* Icon-Spotlight-40.png in Resources */,
 				B824C0EB1C186ED600C6A1D3 /* Icon-76.png in Resources */,
@@ -273,6 +276,7 @@
 				B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */,
 				B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */,
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
+				B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */,
 				B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
