@@ -53,7 +53,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="theMap" destination="bRA-j4-hbm" id="oUW-OE-ujK"/>
-                        <outlet property="xcv" destination="8Qh-vo-qQ2" id="oGP-ll-DX8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

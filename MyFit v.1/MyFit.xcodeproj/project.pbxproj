@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunViewController.swift; path = MyFit/RunViewController.swift; sourceTree = "<group>"; };
+		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
 		B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		B824C0DF1C18638300C6A1D3 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
@@ -104,7 +104,6 @@
 		B8EFE5EE1C13D0580008F2BD = {
 			isa = PBXGroup;
 			children = (
-				B673CE951C1B135A00A52755 /* RunViewController.swift */,
 				B8EFE61E1C13D3200008F2BD /* MapKit.framework */,
 				B8EFE61C1C13D1370008F2BD /* CoreLocation.framework */,
 				B8EFE5F91C13D0580008F2BD /* MyFit */,
@@ -125,6 +124,7 @@
 		B8EFE5F91C13D0580008F2BD /* MyFit */ = {
 			isa = PBXGroup;
 			children = (
+				B673CE951C1B135A00A52755 /* RunViewController.swift */,
 				B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */,
 				B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */,
 				B8EFE5FE1C13D0590008F2BD /* ViewController.swift */,

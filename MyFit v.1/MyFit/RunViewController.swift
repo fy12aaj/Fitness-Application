@@ -19,20 +19,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var calorieLabel: UILabel!
     @IBOutlet weak var paceLabel: UILabel!
   
-    
-    override func viewWillAppear(animated: Bool) {
-        locationManager.requestAlwaysAuthorization()
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        timer.invalidate()
-    }
-    
-    //MARK: Location Tracking
-    
-    var seconds = 0.0
-    var distance = 0.0
+    //MARK: Variables
     
     lazy var locationManager: CLLocationManager = {
         var _locationManager = CLLocationManager()
@@ -48,6 +35,32 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     lazy var locations = [CLLocation]()
     lazy var timer = NSTimer()
     
+    override func viewWillAppear(animated: Bool) {
+        locationManager.requestAlwaysAuthorization()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer.invalidate()
+    }
+    
+    override func viewDidLoad() {
+        seconds = 0.0
+        distance = 0.0
+        locations.removeAll(keepCapacity: false)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1,
+            target: self,
+            selector: "eachSecond:",
+            userInfo: nil,
+            repeats: true)
+        startLocationUpdates()
+    }
+    
+    //MARK: Location Tracking
+    
+    var seconds = 0.0
+    var distance = 0.0
+    
     func eachSecond(timer: NSTimer) {
         seconds++
         let secondsQuantity = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: seconds)
@@ -60,9 +73,13 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         paceLabel.text = "Pace: " + paceQuantity.description
     }
     
-    // MARK: - CLLocationManagerDelegate
-    extension NewRunViewController: CLLocationManagerDelegate {
+    func startLocationUpdates() {
+        // Here, the location manager will be lazily instantiated
+        locationManager.startUpdatingLocation()
     }
     
 }
 
+// MARK: - CLLocationManagerDelegate
+extension RunViewController: CLLocationManagerDelegate {
+}
