@@ -33,12 +33,17 @@ class WaistRatioViewController: UIViewController {
         }
     }
     
-    /*
+    
     // MARK: Functions
     @IBAction func calCulateDown(sender: AnyObject) {
-        let res :  Float = (Float(waistField.text!)! /  Float(heightField.text!)!)
-        resultLabel.text = "Ratio is " + String(res); // result wth
-        if(res < 0.34) {
+        
+        let a: Int? = (waistField.text!).toInt()
+        let b: Int? = (heightField.text!).toInt()
+        
+        var res =  (Float(a!)/Float(b!))
+        res = round(res*100)/100
+        resultLabel.text = "\(res)" // result wth
+        if(0.34 > res) {
             resCategory.text = "You are extremely slim." // body calculation
         }
         else if(res < 0.45) {
@@ -63,8 +68,8 @@ class WaistRatioViewController: UIViewController {
     }
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-    */
+    
 }
