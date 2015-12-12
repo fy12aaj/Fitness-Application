@@ -273,7 +273,7 @@
         <!--Run Results View Controller-->
         <scene sceneID="P4z-D3-dua">
             <objects>
-                <viewController id="bPg-zM-6V1" customClass="RunResultsViewController" sceneMemberID="viewController">
+                <viewController id="bPg-zM-6V1" customClass="RunResultsViewController" customModule="MyFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t40-GE-gjO"/>
                         <viewControllerLayoutGuide type="bottom" id="FVt-v7-prM"/>
