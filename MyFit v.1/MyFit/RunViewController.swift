@@ -22,6 +22,10 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
   
     //MARK: Variables
     
+    var managedObjectContext: NSManagedObjectContext?
+    
+    var run: Run!
+    
     lazy var locationManager: CLLocationManager = {
         var _locationManager = CLLocationManager()
         _locationManager.delegate = self
@@ -83,11 +87,11 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     //MARK: Saving the run
     
-    /*
+    
     func saveRun() {
         // 1
         let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
-            inManagedObjectContext: NSManagedObject.managedObjectContext!) as! Run
+            inManagedObjectContext: managedObjectContext!) as! Run
         savedRun.distance = distance
         savedRun.duration = seconds
         savedRun.timestamp = NSDate()
@@ -130,5 +134,5 @@ extension RunViewController: CLLocationManagerDelegate {
                 self.locations.append(location)
             }
         }
-    } */
+    }
 }

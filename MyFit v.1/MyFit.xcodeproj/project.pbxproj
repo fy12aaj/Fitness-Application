@@ -10,6 +10,9 @@
 		B673CE901C1B112800A52755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6001C13D0590008F2BD /* Main.storyboard */; };
 		B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE951C1B135A00A52755 /* RunViewController.swift */; };
 		B673CE981C1B1E6000A52755 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE971C1B1E6000A52755 /* CalendarViewController.swift */; };
+		B6FE38EB1C1CA440002F81BA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE38EA1C1CA440002F81BA /* Run.swift */; };
+		B6FE38ED1C1CA4C4002F81BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE38EC1C1CA4C4002F81BA /* Location.swift */; };
+		B6FE38EF1C1CA58E002F81BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */; };
 		B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */; };
 		B824C0DE1C1788F300C6A1D3 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */; };
 		B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */; };
@@ -51,6 +54,9 @@
 /* Begin PBXFileReference section */
 		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		B673CE971C1B1E6000A52755 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B6FE38EA1C1CA440002F81BA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		B6FE38EC1C1CA4C4002F81BA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
 		B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaistRationViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FE38EF1C1CA58E002F81BA /* HealthKit.framework in Frameworks */,
 				B8DE89AC1C1BCA3F00800201 /* Social.framework in Frameworks */,
 				B8EFE61F1C13D3200008F2BD /* MapKit.framework in Frameworks */,
 				B8EFE61D1C13D1370008F2BD /* CoreLocation.framework in Frameworks */,
@@ -129,6 +136,7 @@
 		B8E5FDF11C1B9EB500C7D323 /* framworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */,
 				B8DE89AB1C1BCA3F00800201 /* Social.framework */,
 				B8EFE61C1C13D1370008F2BD /* CoreLocation.framework */,
 				B8EFE61E1C13D3200008F2BD /* MapKit.framework */,
@@ -160,6 +168,8 @@
 			children = (
 				B673CE971C1B1E6000A52755 /* CalendarViewController.swift */,
 				B673CE951C1B135A00A52755 /* RunViewController.swift */,
+				B6FE38EC1C1CA4C4002F81BA /* Location.swift */,
+				B6FE38EA1C1CA440002F81BA /* Run.swift */,
 				B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */,
 				B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */,
 				B8EFE5FE1C13D0590008F2BD /* ViewController.swift */,
@@ -315,6 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B824C0DE1C1788F300C6A1D3 /* BMICalculator.swift in Sources */,
+				B6FE38EB1C1CA440002F81BA /* Run.swift in Sources */,
+				B6FE38ED1C1CA4C4002F81BA /* Location.swift in Sources */,
 				B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */,
 				B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */,
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
