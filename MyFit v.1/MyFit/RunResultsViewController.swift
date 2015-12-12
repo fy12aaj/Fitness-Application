@@ -8,6 +8,7 @@
 
 import UIKit
 import Social
+import CoreLocation
 
 class RunRsultsViewController: UIViewController {
     

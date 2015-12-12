@@ -47,7 +47,7 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="U1c-DB-gYU"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -86,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOP-cK-NdO">
-                                <rect key="frame" x="170" y="398" width="123" height="34"/>
+                                <rect key="frame" x="170" y="398" width="156" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +110,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WS-hp-h7e">
-                                <rect key="frame" x="170" y="440" width="115" height="34"/>
+                                <rect key="frame" x="170" y="440" width="151" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m87-P0-7aO">
-                                <rect key="frame" x="-5" y="72" width="414" height="269"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="301"/>
                                 <animations/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ry4-FU-y6h">
@@ -155,18 +155,18 @@
                                     <navigationItem title="Activity" id="Jvc-mw-sft"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Taken" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-er-0ta">
-                                <rect key="frame" x="168" y="381" width="87" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Taken :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-er-0ta">
+                                <rect key="frame" x="52" y="373" width="98" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-bL-OGj">
-                                <rect key="frame" x="87" y="444" width="259" height="93"/>
+                                <rect key="frame" x="187" y="574" width="259" height="93"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Share on Facebook">
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -175,10 +175,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alO-zz-4bd">
-                                <rect key="frame" x="82" y="512" width="259" height="93"/>
+                                <rect key="frame" x="0.0" y="587" width="218" height="66"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Share on Twitter">
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -186,6 +186,27 @@
                                     <action selector="shareToTwitter" destination="bPg-zM-6V1" eventType="touchUpInside" id="u0q-wI-eyz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calaroies :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-K9-Cpp">
+                                <rect key="frame" x="52" y="457" width="98" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share with Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-BJ-0BW">
+                                <rect key="frame" x="43" y="558" width="337" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyN-qn-wER">
+                                <rect key="frame" x="52" y="417" width="98" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -501,7 +522,7 @@
         <scene sceneID="Uit-6y-W4D">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kEE-dp-pYG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Start" id="lLy-Kn-Pzp"/>
+                    <tabBarItem key="tabBarItem" title="Start" image="start" id="lLy-Kn-Pzp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNL-8b-SLe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -521,7 +542,7 @@
         <scene sceneID="dxM-h3-rox">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1CL-yF-33q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BMI" id="HNa-87-juz"/>
+                    <tabBarItem key="tabBarItem" title="BMI" image="BMI" id="HNa-87-juz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Sb-sa-UXm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -583,7 +604,7 @@
         <scene sceneID="LgX-H9-kJX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mxc-qA-uLd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calander" id="MSe-Rk-OQW"/>
+                    <tabBarItem key="tabBarItem" title="Calander" image="calendar" id="MSe-Rk-OQW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QFY-Tp-UuD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -600,4 +621,9 @@
             <point key="canvasLocation" x="388" y="1323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BMI" width="24" height="24"/>
+        <image name="calendar" width="24" height="24"/>
+        <image name="start" width="24" height="24"/>
+    </resources>
 </document>

@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var theMap: MKMapView!
     @IBOutlet weak var theLabel: UILabel!
     
-    //MARK: Facebook and Twitter Share.
+    //MARK: Func for Facebook and Twitter share.
     
     // User need to put the login details from the setting either in the emulator or the phone.
     
@@ -62,7 +62,6 @@ class ViewController: UIViewController {
         
     }
 
-    
     
     
     
