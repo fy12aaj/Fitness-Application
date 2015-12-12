@@ -219,7 +219,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bPg-zM-6V1" kind="show" id="fTj-wm-xKP"/>
+                                    <segue destination="bPg-zM-6V1" kind="show" identifier="RunDetails" id="fTj-wm-xKP"/>
                                 </connections>
                             </button>
                         </subviews>
