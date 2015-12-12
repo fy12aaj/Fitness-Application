@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>I want to know your location.</string>
+	<string>Know location.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Please share you location.</string>
+	<string>Your location is used to track your run.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -30,11 +30,11 @@ class BMICalculator: UIViewController {
         return true
     }
     
-    /*override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {
             performSegueWithIdentifier("showres", sender: self)
         }
-    }*/
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

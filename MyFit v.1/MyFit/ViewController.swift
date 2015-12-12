@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     
     //MARK: Outlet
     @IBOutlet weak var theMap: MKMapView!
-    @IBOutlet weak var theLabel: UILabel!
+    
+    
+    
+    
     
     //MARK: Func for Facebook and Twitter share.
     

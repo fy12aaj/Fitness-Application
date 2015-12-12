@@ -20,14 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // MARK: UITabBar colors.
-        UITabBar.appearance().barTintColor = UIColor.blackColor() // Bar Color
+        UITabBar.appearance().barTintColor = UIColor.blueColor() // Bar Color
         UITabBar.appearance().tintColor = UIColor.whiteColor() // tint( logo ) Color.
         
         // MARK: NavigationBar colors.
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         UINavigationBar.appearance().barStyle = UIBarStyle.BlackTranslucent
         
-        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        UINavigationBar.appearance().barTintColor = UIColor.blueColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         return true

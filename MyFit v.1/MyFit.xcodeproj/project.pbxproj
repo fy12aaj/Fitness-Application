@@ -30,6 +30,7 @@
 		B8DE89BE1C1BE35900800201 /* BMI.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89BB1C1BE35900800201 /* BMI.png */; };
 		B8DE89BF1C1BE35900800201 /* BMI@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89BC1C1BE35900800201 /* BMI@2x.png */; };
 		B8DE89C01C1BE35900800201 /* BMI@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89BD1C1BE35900800201 /* BMI@3x.png */; };
+		B8DE89C21C1C62CA00800201 /* BMIResults.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89C11C1C62CA00800201 /* BMIResults.png */; };
 		B8E5FDF01C1B9DFB00C7D323 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E5FDEF1C1B9DFB00C7D323 /* SplashScreen.png */; };
 		B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */; };
 		B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FE1C13D0590008F2BD /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 		B8DE89BB1C1BE35900800201 /* BMI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMI.png; sourceTree = "<group>"; };
 		B8DE89BC1C1BE35900800201 /* BMI@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMI@2x.png"; sourceTree = "<group>"; };
 		B8DE89BD1C1BE35900800201 /* BMI@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMI@3x.png"; sourceTree = "<group>"; };
+		B8DE89C11C1C62CA00800201 /* BMIResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMIResults.png; sourceTree = "<group>"; };
 		B8E5FDEF1C1B9DFB00C7D323 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 		B8EFE5F71C13D0580008F2BD /* MyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFE5FB1C13D0580008F2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		B824C0ED1C186EE500C6A1D3 /* Design Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8DE89C11C1C62CA00800201 /* BMIResults.png */,
 				B8DE89AF1C1BE1F200800201 /* calendar.png */,
 				B8DE89B01C1BE1F200800201 /* calendar@2x.png */,
 				B8DE89B11C1BE1F200800201 /* calendar@3x.png */,
@@ -293,6 +296,7 @@
 				B8DE89B21C1BE1F200800201 /* calendar.png in Resources */,
 				B8DE89B31C1BE1F200800201 /* calendar@2x.png in Resources */,
 				B8DE89BA1C1BE2C100800201 /* start@3x.png in Resources */,
+				B8DE89C21C1C62CA00800201 /* BMIResults.png in Resources */,
 				B8EFE6071C13D0590008F2BD /* LaunchScreen.xib in Resources */,
 				B8DE89BF1C1BE35900800201 /* BMI@2x.png in Resources */,
 				B8E5FDF01C1B9DFB00C7D323 /* SplashScreen.png in Resources */,
