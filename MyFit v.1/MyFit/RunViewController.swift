@@ -11,6 +11,8 @@ import UIKit
 import CoreLocation
 import HealthKit
 
+let DetailSegueName = "RunDetails"
+
 class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     //MARK: Outlets
@@ -19,6 +21,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!    
     @IBOutlet weak var paceLabel: UILabel!
+    @IBOutlet weak var finishButton: UIButton!
   
     //MARK: Variables
     
@@ -52,13 +55,13 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         timer.invalidate()
-        saveRun()
     }
     
     override func viewDidLoad() {
         seconds = 0.0
         distance = 0.0
         locations.removeAll(keepCapacity: false)
+        finishButton.hidden = true
         timer = NSTimer.scheduledTimerWithTimeInterval(1,
             target: self,
             selector: "eachSecond:",
@@ -85,6 +88,16 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         // Here, the location manager will be lazily instantiated
         locationManager.startUpdatingLocation()
     }
+    
+    //MARK: Actions
+    
+    @IBAction func stopClicked(sender: UIButton) {
+        let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
+        actionSheet.actionSheetStyle = .Default
+        actionSheet.showInView(view)
+    }
+    
+    
     
     //MARK: Saving the run
     
@@ -134,6 +147,20 @@ extension RunViewController: CLLocationManagerDelegate {
                 //save location
                 self.locations.append(location)
             }
+        }
+    }
+}
+
+// MARK: UIActionSheetDelegate
+extension RunViewController: UIActionSheetDelegate {
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        //save
+        if buttonIndex == 1 {
+            performSegueWithIdentifier(DetailSegueName, sender: nil)
+        }
+            //discard
+        else if buttonIndex == 2 {
+            navigationController?.popToRootViewControllerAnimated(true)
         }
     }
 }

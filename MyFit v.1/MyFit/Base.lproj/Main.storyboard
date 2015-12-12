@@ -200,7 +200,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bPg-zM-6V1" kind="show" id="flA-Ad-Ayu"/>
+                                    <action selector="stopClicked:" destination="W74-my-gu4" eventType="touchUpInside" id="wmx-Ut-4Nf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOP-cK-NdO">
@@ -213,6 +213,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Af6-8F-7vY">
+                                <rect key="frame" x="189" y="620" width="41" height="30"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bPg-zM-6V1" kind="show" id="fTj-wm-xKP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,6 +261,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="vOP-cK-NdO" id="nlp-Je-Cih"/>
                         <outlet property="distanceLabel" destination="DqK-Ah-QDh" id="pxK-HY-IMn"/>
+                        <outlet property="finishButton" destination="Af6-8F-7vY" id="4gv-gk-yl4"/>
                         <outlet property="paceLabel" destination="9WS-hp-h7e" id="Wlv-uP-O1g"/>
                         <outlet property="timeLabel" destination="zxd-hu-xZL" id="zI9-3e-jye"/>
                     </connections>
@@ -413,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLe-eC-JHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056" y="-582"/>
+            <point key="canvasLocation" x="1259" y="-488"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="8QR-AB-hy1">
