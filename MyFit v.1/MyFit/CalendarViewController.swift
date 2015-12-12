@@ -5,6 +5,7 @@
 //  Created by Andrew Dowson [sc13ad] on 11/12/2015.
 //  Copyright (c) 2015 Abdulaziz Jamal. All rights reserved.
 //
+/*
 
 import Foundation
 import UIKit
@@ -19,6 +20,7 @@ class CalendarViewController: UIViewController {
         let eventStore = EKEventStore()
         
         // 2
+        
         switch EKEventStore.authorizationStatusForEntityType(EKEntityTypeEvent) {
         case .Authorized:
             insertEvent(eventStore)
@@ -56,3 +58,5 @@ class CalendarViewController: UIViewController {
     */
 
 }
+
+*/

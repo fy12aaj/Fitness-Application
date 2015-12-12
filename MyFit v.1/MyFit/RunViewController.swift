@@ -83,7 +83,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     //MARK: Saving the run
     
-    
+    /*
     func saveRun() {
         // 1
         let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
@@ -130,5 +130,5 @@ extension RunViewController: CLLocationManagerDelegate {
                 self.locations.append(location)
             }
         }
-    }
+    } */
 }
