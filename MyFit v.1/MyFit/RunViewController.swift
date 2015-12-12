@@ -110,7 +110,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         savedRun.locations = NSOrderedSet(array: savedLocations)
         run = savedRun
         
-        // 3
+        // error checking for run save
         var error: NSError?
         let success = managedObjectContext!.save(&error)
         if !success {
