@@ -14,7 +14,7 @@ import MapKit
 import Social
 
 class RunResultsViewController: UIViewController {
-    var run: Run!
+    var run: Run?
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var timeLabel: UILabel!
@@ -37,32 +37,32 @@ class RunResultsViewController: UIViewController {
     //MARK: Displaying Run
     
     func configureView(){
-        let distanceQuantity = HKQuantity(unit: HKUnit.meterUnit(), doubleValue: run.distance.doubleValue)
+        let distanceQuantity = HKQuantity(unit: HKUnit.meterUnit(), doubleValue: run!.distance.doubleValue)
         distanceLabel.text = "Distance: " + distanceQuantity.description
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .MediumStyle
-        dateLabel.text = dateFormatter.stringFromDate(run.timestamp)
+        dateLabel.text = dateFormatter.stringFromDate(run!.timestamp)
         
-        let secondsQuantity = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: run.duration.doubleValue)
+        let secondsQuantity = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: run!.duration.doubleValue)
         timeLabel.text = "Time: " + secondsQuantity.description
         
         let paceUnit = HKUnit.secondUnit().unitDividedByUnit(HKUnit.meterUnit())
-        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: run.duration.doubleValue / run.distance.doubleValue)
+        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: run!.duration.doubleValue / run!.distance.doubleValue)
         paceLabel.text = "Pace: " + paceQuantity.description
         
         loadMap()
     }
     
     func mapRegion() -> MKCoordinateRegion {
-        let initialLoc = run.locations.firstObject as! Location
+        let initialLoc = run!.locations.firstObject as! Location
         
         var minLat = initialLoc.latitude.doubleValue
         var minLng = initialLoc.longitude.doubleValue
         var maxLat = minLat
         var maxLng = minLng
         
-        let locations = run.locations.array as! [Location]
+        let locations = run!.locations.array as! [Location]
         
         for location in locations {
             minLat = min(minLat, location.latitude.doubleValue)
@@ -93,17 +93,17 @@ class RunResultsViewController: UIViewController {
     func polyline() -> MKPolyline {
         var coords = [CLLocationCoordinate2D]()
         
-        let locations = run.locations.array as! [Location]
+        let locations = run!.locations.array as! [Location]
         for location in locations {
             coords.append(CLLocationCoordinate2D(latitude: location.latitude.doubleValue,
                 longitude: location.longitude.doubleValue))
         }
         
-        return MKPolyline(coordinates: &coords, count: run.locations.count)
+        return MKPolyline(coordinates: &coords, count: run!.locations.count)
     }
     
     func loadMap() {
-        if run.locations.count > 0 {
+        if run!.locations.count > 0 {
             mapView.hidden = false
             
             // Set the map bounds

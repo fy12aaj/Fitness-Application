@@ -27,7 +27,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     var managedObjectContext: NSManagedObjectContext?
     
-    var run: Run!
+    var run: Run?
     
     lazy var locationManager: CLLocationManager = {
         var _locationManager = CLLocationManager()
