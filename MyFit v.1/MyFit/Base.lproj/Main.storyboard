@@ -418,7 +418,7 @@
         <!--Calendar View Controller-->
         <scene sceneID="8QR-AB-hy1">
             <objects>
-                <viewController id="n74-mi-5RD" customClass="CalendarViewController" sceneMemberID="viewController">
+                <viewController id="n74-mi-5RD" customClass="CalendarViewController" customModule="MyFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jUJ-bP-dsB"/>
                         <viewControllerLayoutGuide type="bottom" id="Zs1-2g-Vdd"/>
