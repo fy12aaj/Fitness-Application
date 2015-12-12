@@ -413,7 +413,6 @@
                     <connections>
                         <outlet property="dateLabel" destination="n7S-P4-WZ1" id="890-PQ-LN9"/>
                         <outlet property="distanceLabel" destination="cyN-qn-wER" id="2sT-zu-31O"/>
-                        <outlet property="facebookAction" destination="d2W-bL-OGj" id="wSV-zX-4St"/>
                         <outlet property="facebookButton" destination="d2W-bL-OGj" id="vo8-wV-aqb"/>
                         <outlet property="mapView" destination="m87-P0-7aO" id="wvA-Bl-5gj"/>
                         <outlet property="paceLabel" destination="wwf-ja-Zr8" id="pY7-cD-iCS"/>
