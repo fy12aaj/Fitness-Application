@@ -5,7 +5,7 @@
 //  Created by Andrew Dowson [sc13ad] on 11/12/2015.
 //  Copyright (c) 2015 Abdulaziz Jamal. All rights reserved.
 //
-/*
+
 
 import Foundation
 import UIKit
@@ -13,7 +13,7 @@ import EventKit
 
 class CalendarViewController: UIViewController {
 
-    override func viewDidLoad() {
+    /*override func viewDidLoad() {
         super.viewDidLoad()
 
         // 1
@@ -47,7 +47,6 @@ class CalendarViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -59,4 +58,3 @@ class CalendarViewController: UIViewController {
 
 }
 
-*/
