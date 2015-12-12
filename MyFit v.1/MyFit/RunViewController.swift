@@ -17,7 +17,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!    
     @IBOutlet weak var paceLabel: UILabel!
   
     //MARK: Variables

@@ -154,16 +154,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOP-cK-NdO">
-                                <rect key="frame" x="95" y="341" width="261" height="34"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="T8E-f3-hR8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-n1-2PE">
                                 <rect key="frame" x="5" y="0.0" width="414" height="44"/>
                                 <animations/>
@@ -213,6 +203,16 @@
                                     <segue destination="bPg-zM-6V1" kind="show" id="flA-Ad-Ayu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOP-cK-NdO">
+                                <rect key="frame" x="95" y="341" width="261" height="34"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="T8E-f3-hR8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,8 +250,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="calorieLabel" destination="vOP-cK-NdO" id="uhU-7D-5E6"/>
-                        <outlet property="dateLabe" destination="vOP-cK-NdO" id="IpM-e4-G5I"/>
+                        <outlet property="dateLabel" destination="vOP-cK-NdO" id="nlp-Je-Cih"/>
                         <outlet property="distanceLabel" destination="DqK-Ah-QDh" id="pxK-HY-IMn"/>
                         <outlet property="paceLabel" destination="9WS-hp-h7e" id="Wlv-uP-O1g"/>
                         <outlet property="timeLabel" destination="zxd-hu-xZL" id="zI9-3e-jye"/>
