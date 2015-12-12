@@ -11,12 +11,12 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow? //Breaking point for splash screen.
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool { // Override point for customization after application launch.
         
-        // Breaking point for Splash Screen.
+        
         
         
         // MARK: UITabBar colors.

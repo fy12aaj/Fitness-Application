@@ -19,6 +19,8 @@
 		B824C0EB1C186ED600C6A1D3 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = B824C0E91C186ED600C6A1D3 /* Icon-76.png */; };
 		B824C0EC1C186ED600C6A1D3 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B824C0EA1C186ED600C6A1D3 /* Icon-76@2x.png */; };
 		B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */; };
+		B8DE89AC1C1BCA3F00800201 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DE89AB1C1BCA3F00800201 /* Social.framework */; };
+		B8DE89AE1C1BCA8700800201 /* RunResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */; };
 		B8E5FDF01C1B9DFB00C7D323 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E5FDEF1C1B9DFB00C7D323 /* SplashScreen.png */; };
 		B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */; };
 		B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FE1C13D0590008F2BD /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		B824C0E91C186ED600C6A1D3 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		B824C0EA1C186ED600C6A1D3 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaistRationViewController.swift; sourceTree = "<group>"; };
+		B8DE89AB1C1BCA3F00800201 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunResultsViewController.swift; sourceTree = "<group>"; };
 		B8E5FDEF1C1B9DFB00C7D323 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 		B8EFE5F71C13D0580008F2BD /* MyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFE5FB1C13D0580008F2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DE89AC1C1BCA3F00800201 /* Social.framework in Frameworks */,
 				B8EFE61F1C13D3200008F2BD /* MapKit.framework in Frameworks */,
 				B8EFE61D1C13D1370008F2BD /* CoreLocation.framework in Frameworks */,
 			);
@@ -103,11 +108,20 @@
 			name = "Design Files";
 			sourceTree = "<group>";
 		};
+		B8E5FDF11C1B9EB500C7D323 /* framworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE89AB1C1BCA3F00800201 /* Social.framework */,
+				B8EFE61C1C13D1370008F2BD /* CoreLocation.framework */,
+				B8EFE61E1C13D3200008F2BD /* MapKit.framework */,
+			);
+			name = framworks;
+			sourceTree = "<group>";
+		};
 		B8EFE5EE1C13D0580008F2BD = {
 			isa = PBXGroup;
 			children = (
-				B8EFE61E1C13D3200008F2BD /* MapKit.framework */,
-				B8EFE61C1C13D1370008F2BD /* CoreLocation.framework */,
+				B8E5FDF11C1B9EB500C7D323 /* framworks */,
 				B8EFE5F91C13D0580008F2BD /* MyFit */,
 				B8EFE60F1C13D0590008F2BD /* MyFitTests */,
 				B8EFE5F81C13D0580008F2BD /* Products */,
@@ -133,6 +147,7 @@
 				B8EFE5FE1C13D0590008F2BD /* ViewController.swift */,
 				B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */,
 				B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */,
+				B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */,
 				B824C0ED1C186EE500C6A1D3 /* Design Files */,
 				B8EFE6001C13D0590008F2BD /* Main.storyboard */,
 				B8EFE6031C13D0590008F2BD /* Images.xcassets */,
@@ -282,6 +297,7 @@
 				B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */,
 				B673CE981C1B1E6000A52755 /* CalendarViewController.swift in Sources */,
 				B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */,
+				B8DE89AE1C1BCA8700800201 /* RunResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

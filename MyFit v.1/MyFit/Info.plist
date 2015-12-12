@@ -5,7 +5,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>I want to know your location.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Because i want to know.</string>
+	<string>Please share you location.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
