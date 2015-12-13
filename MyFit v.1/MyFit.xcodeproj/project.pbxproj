@@ -14,7 +14,7 @@
 		B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */; };
 		B824C0DE1C1788F300C6A1D3 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */; };
 		B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */; };
-		B85527E21C1DF42C00D89BFA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85527E11C1DF42C00D89BFA /* TableViewController.swift */; };
+		B85527E21C1DF42C00D89BFA /* PlayContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85527E11C1DF42C00D89BFA /* PlayContainer.swift */; };
 		B85527E91C1DF5FE00D89BFA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85527E31C1DF5FE00D89BFA /* Bolts.framework */; };
 		B85527EA1C1DF5FE00D89BFA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85527E41C1DF5FE00D89BFA /* Parse.framework */; };
 		B85527EB1C1DF5FE00D89BFA /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85527E51C1DF5FE00D89BFA /* ParseFacebookUtils.framework */; };
@@ -35,6 +35,14 @@
 		B85528091C1E0C8A00D89BFA /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528061C1E0C8A00D89BFA /* Play@2x.png */; };
 		B855280A1C1E0C8A00D89BFA /* Play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528071C1E0C8A00D89BFA /* Play@3x.png */; };
 		B855280D1C1E0ED000D89BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B855280B1C1E0ED000D89BFA /* Main.storyboard */; };
+		B85528131C1E1ADA00D89BFA /* calculate.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528101C1E1ADA00D89BFA /* calculate.png */; };
+		B85528161C1E213E00D89BFA /* facebook-share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528141C1E213E00D89BFA /* facebook-share-button.png */; };
+		B85528171C1E213E00D89BFA /* twitter-share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528151C1E213E00D89BFA /* twitter-share-button.png */; };
+		B8D9E5C41C1E299F00ADF237 /* Start-Time-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C11C1E299F00ADF237 /* Start-Time-Button.png */; };
+		B8D9E5C51C1E299F00ADF237 /* Play-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C21C1E299F00ADF237 /* Play-Button.png */; };
+		B8D9E5C61C1E299F00ADF237 /* Pause-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C31C1E299F00ADF237 /* Pause-Button.png */; };
+		B8D9E5C91C1E2AC500ADF237 /* WTH-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C71C1E2AC500ADF237 /* WTH-Button.png */; };
+		B8D9E5CA1C1E2AC500ADF237 /* BMI-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C81C1E2AC500ADF237 /* BMI-Button.png */; };
 		B8DE89AC1C1BCA3F00800201 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DE89AB1C1BCA3F00800201 /* Social.framework */; };
 		B8DE89AE1C1BCA8700800201 /* RunResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */; };
 		B8DE89B81C1BE2C100800201 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89B51C1BE2C100800201 /* start.png */; };
@@ -75,7 +83,7 @@
 		B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
 		B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaistRationViewController.swift; sourceTree = "<group>"; };
-		B85527E11C1DF42C00D89BFA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B85527E11C1DF42C00D89BFA /* PlayContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayContainer.swift; sourceTree = "<group>"; };
 		B85527E31C1DF5FE00D89BFA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B85527E41C1DF5FE00D89BFA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B85527E51C1DF5FE00D89BFA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -96,6 +104,14 @@
 		B85528061C1E0C8A00D89BFA /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
 		B85528071C1E0C8A00D89BFA /* Play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@3x.png"; sourceTree = "<group>"; };
 		B855280C1C1E0ED000D89BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B85528101C1E1ADA00D89BFA /* calculate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculate.png; sourceTree = "<group>"; };
+		B85528141C1E213E00D89BFA /* facebook-share-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-share-button.png"; sourceTree = "<group>"; };
+		B85528151C1E213E00D89BFA /* twitter-share-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-share-button.png"; sourceTree = "<group>"; };
+		B8D9E5C11C1E299F00ADF237 /* Start-Time-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Start-Time-Button.png"; sourceTree = "<group>"; };
+		B8D9E5C21C1E299F00ADF237 /* Play-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Button.png"; sourceTree = "<group>"; };
+		B8D9E5C31C1E299F00ADF237 /* Pause-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause-Button.png"; sourceTree = "<group>"; };
+		B8D9E5C71C1E2AC500ADF237 /* WTH-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WTH-Button.png"; sourceTree = "<group>"; };
+		B8D9E5C81C1E2AC500ADF237 /* BMI-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMI-Button.png"; sourceTree = "<group>"; };
 		B8DE89AB1C1BCA3F00800201 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunResultsViewController.swift; sourceTree = "<group>"; };
 		B8DE89B51C1BE2C100800201 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
@@ -165,8 +181,16 @@
 				B8DE89C11C1C62CA00800201 /* BMIResults.png */,
 				B8DE89C71C1C90CC00800201 /* Icon-76.png */,
 				B8DE89C81C1C90CC00800201 /* Icon-76@2x.png */,
+				B85528141C1E213E00D89BFA /* facebook-share-button.png */,
+				B85528151C1E213E00D89BFA /* twitter-share-button.png */,
 				B8DE89C31C1C90B000800201 /* Icon-60@2x.png */,
+				B8D9E5C11C1E299F00ADF237 /* Start-Time-Button.png */,
+				B8D9E5C21C1E299F00ADF237 /* Play-Button.png */,
+				B8D9E5C31C1E299F00ADF237 /* Pause-Button.png */,
 				B8DE89C41C1C90B000800201 /* Icon-60@3x.png */,
+				B8D9E5C71C1E2AC500ADF237 /* WTH-Button.png */,
+				B8D9E5C81C1E2AC500ADF237 /* BMI-Button.png */,
+				B85528101C1E1ADA00D89BFA /* calculate.png */,
 				B8DE89B51C1BE2C100800201 /* start.png */,
 				B8DE89B61C1BE2C100800201 /* start@2x.png */,
 				B8DE89B71C1BE2C100800201 /* start@3x.png */,
@@ -234,7 +258,7 @@
 				B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */,
 				B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */,
 				B8EFE5FE1C13D0590008F2BD /* ViewController.swift */,
-				B85527E11C1DF42C00D89BFA /* TableViewController.swift */,
+				B85527E11C1DF42C00D89BFA /* PlayContainer.swift */,
 				B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */,
 				B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */,
 				B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */,
@@ -354,18 +378,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8DE89C91C1C90CC00800201 /* Icon-76.png in Resources */,
+				B8D9E5C61C1E299F00ADF237 /* Pause-Button.png in Resources */,
 				B8DE89BA1C1BE2C100800201 /* start@3x.png in Resources */,
+				B85528131C1E1ADA00D89BFA /* calculate.png in Resources */,
 				B8DE89C51C1C90B000800201 /* Icon-60@2x.png in Resources */,
+				B8D9E5C41C1E299F00ADF237 /* Start-Time-Button.png in Resources */,
 				B8DE89C21C1C62CA00800201 /* BMIResults.png in Resources */,
 				B8DE89CA1C1C90CC00800201 /* Icon-76@2x.png in Resources */,
 				B8EFE6071C13D0590008F2BD /* LaunchScreen.xib in Resources */,
+				B85528171C1E213E00D89BFA /* twitter-share-button.png in Resources */,
+				B8D9E5C51C1E299F00ADF237 /* Play-Button.png in Resources */,
 				B855280D1C1E0ED000D89BFA /* Main.storyboard in Resources */,
 				B8DE89C61C1C90B000800201 /* Icon-60@3x.png in Resources */,
+				B8D9E5C91C1E2AC500ADF237 /* WTH-Button.png in Resources */,
 				B8DE89BF1C1BE35900800201 /* BMI@2x.png in Resources */,
 				B8EFE6041C13D0590008F2BD /* Images.xcassets in Resources */,
 				B8DE89B91C1BE2C100800201 /* start@2x.png in Resources */,
 				B8DE89B81C1BE2C100800201 /* start.png in Resources */,
+				B85528161C1E213E00D89BFA /* facebook-share-button.png in Resources */,
 				B855280A1C1E0C8A00D89BFA /* Play@3x.png in Resources */,
+				B8D9E5CA1C1E2AC500ADF237 /* BMI-Button.png in Resources */,
 				B85528081C1E0C8A00D89BFA /* Play.png in Resources */,
 				B8DE89C01C1BE35900800201 /* BMI@3x.png in Resources */,
 				B85528091C1E0C8A00D89BFA /* Play@2x.png in Resources */,
@@ -394,7 +426,7 @@
 				B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */,
 				B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */,
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
-				B85527E21C1DF42C00D89BFA /* TableViewController.swift in Sources */,
+				B85527E21C1DF42C00D89BFA /* PlayContainer.swift in Sources */,
 				B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */,
 				B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */,
 				B8DE89AE1C1BCA8700800201 /* RunResultsViewController.swift in Sources */,

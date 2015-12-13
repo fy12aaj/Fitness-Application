@@ -22,7 +22,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var dateLabel: UILabel!    
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var finishButton: UIButton!
-  
+    
     //MARK: Variables
     
     var managedObjectContext: NSManagedObjectContext?
