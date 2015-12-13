@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow? //Breaking point for splash screen.
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool { // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("pntvQGEIrDjJQkj57aeU4XLt6z8vscteDmzRs21t",
+            clientKey: "Uf7GcwVowM3MDV6A4yfs5qh2WIOEhxLGjmXkdNOI")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         
         
         
