@@ -166,6 +166,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-v4-E1W">
+                                <rect key="frame" x="186" y="505" width="52" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVl-we-4vM">
                                 <rect key="frame" x="162" y="549" width="101" height="45"/>
                                 <animations/>
@@ -184,6 +192,7 @@
                         <constraints>
                             <constraint firstItem="5d7-f9-VRZ" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="73" id="6pB-em-rhM"/>
                             <constraint firstItem="eVl-we-4vM" firstAttribute="top" secondItem="9WS-hp-h7e" secondAttribute="bottom" constant="112" id="9SJ-LX-EbB"/>
+                            <constraint firstItem="FOS-v4-E1W" firstAttribute="top" secondItem="9WS-hp-h7e" secondAttribute="bottom" constant="68" id="DRD-FG-WDA"/>
                             <constraint firstItem="vOP-cK-NdO" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="79" id="E3C-Fl-zNp"/>
                             <constraint firstItem="vOP-cK-NdO" firstAttribute="top" secondItem="DqK-Ah-QDh" secondAttribute="bottom" constant="25" id="K2m-vp-45C"/>
                             <constraint firstItem="zxd-hu-xZL" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="79" id="KA1-tc-Uvx"/>
@@ -194,11 +203,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="5d7-f9-VRZ" secondAttribute="trailing" constant="66" id="Ywd-BX-XgZ"/>
                             <constraint firstItem="BJd-n1-2PE" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="-11" id="azV-9k-217"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eVl-we-4vM" secondAttribute="trailing" constant="135" id="cbq-NL-WlY"/>
+                            <constraint firstItem="eVl-we-4vM" firstAttribute="leading" secondItem="FOS-v4-E1W" secondAttribute="trailing" constant="-76" id="cik-FK-C2h"/>
                             <constraint firstItem="DqK-Ah-QDh" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="79" id="egl-7T-FE4"/>
                             <constraint firstItem="zxd-hu-xZL" firstAttribute="top" secondItem="5d7-f9-VRZ" secondAttribute="bottom" constant="105" id="hCz-kA-Fiv"/>
                             <constraint firstItem="9WS-hp-h7e" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="79" id="ovP-j0-4qA"/>
                             <constraint firstItem="eVl-we-4vM" firstAttribute="centerX" secondItem="BJd-n1-2PE" secondAttribute="centerX" id="pL7-cn-7jX"/>
                             <constraint firstItem="9WS-hp-h7e" firstAttribute="top" secondItem="vOP-cK-NdO" secondAttribute="bottom" constant="31" id="rMt-2O-fBO"/>
+                            <constraint firstItem="FOS-v4-E1W" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="170" id="sSL-K8-F7D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BJd-n1-2PE" secondAttribute="trailing" constant="-21" id="uQP-Wi-NdV"/>
                             <constraint firstItem="DqK-Ah-QDh" firstAttribute="top" secondItem="zxd-hu-xZL" secondAttribute="bottom" constant="24" id="wYb-iy-pd8"/>
                         </constraints>
@@ -207,6 +218,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="vOP-cK-NdO" id="nlp-Je-Cih"/>
                         <outlet property="distanceLabel" destination="DqK-Ah-QDh" id="pxK-HY-IMn"/>
+                        <outlet property="finishButton" destination="FOS-v4-E1W" id="35i-yL-ZHh"/>
                         <outlet property="paceLabel" destination="9WS-hp-h7e" id="Wlv-uP-O1g"/>
                         <outlet property="stopButton" destination="eVl-we-4vM" id="Y4P-nS-9H2"/>
                         <outlet property="timeLabel" destination="zxd-hu-xZL" id="zI9-3e-jye"/>

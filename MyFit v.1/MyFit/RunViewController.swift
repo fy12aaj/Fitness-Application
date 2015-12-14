@@ -20,7 +20,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!    
-    @IBOutlet weak var paceLabel: UILabel!
+    @IBOutlet weak var paceLabel: UILabel!    
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
@@ -123,7 +123,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         savedRun.locations = NSOrderedSet(array: savedLocations)
-        run = savedRun
+        var run: Run = savedRun
         
         // error checking for run save
         var error: NSError?
