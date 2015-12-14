@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainViewController : UIViewController {
+class MusicViewController : UIViewController {
     
     //MARK: Labels.
     @IBOutlet weak var Pause: UIButton!

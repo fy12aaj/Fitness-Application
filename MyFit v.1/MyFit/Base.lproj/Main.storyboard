@@ -957,10 +957,10 @@
             </objects>
             <point key="canvasLocation" x="405" y="2236"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Music View Controller-->
         <scene sceneID="PkF-mX-qkk">
             <objects>
-                <viewController id="UVL-0C-hs8" customClass="MainViewController" customModule="MyFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UVL-0C-hs8" customClass="MusicViewController" customModule="MyFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ria-WI-7Hv"/>
                         <viewControllerLayoutGuide type="bottom" id="XFT-3G-IbU"/>

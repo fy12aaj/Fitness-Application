@@ -57,15 +57,16 @@ class RunResultsViewController: UIViewController {
     
     func mapRegion() -> MKCoordinateRegion { // Calculate map region to display the latitude and longitude.
         let initialLoc = run!.locations.firstObject as! Location
-        
+        //initial values for each, set for min and max
         var minLat = initialLoc.latitude.doubleValue
         var minLng = initialLoc.longitude.doubleValue
         var maxLat = minLat
         var maxLng = minLng
-        
+        //get array of Location objects
         let locations = run!.locations.array as! [Location]
         
         for location in locations {
+            //Get hightest and lowest values
             minLat = min(minLat, location.latitude.doubleValue)
             minLng = min(minLng, location.longitude.doubleValue)
             maxLat = max(maxLat, location.latitude.doubleValue)
@@ -79,7 +80,8 @@ class RunResultsViewController: UIViewController {
                 longitudeDelta: (maxLng - minLng)*1.1))
     }
     
-    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! { // Draw's a polyline in the map. ( for some reasons it does not appear in the map viewed).
+    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! { // Draw's a polyline in the map.
+        //if not a polyline do nothing
         if !overlay.isKindOfClass(MKPolyline) {
             return nil
         }

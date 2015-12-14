@@ -15,8 +15,8 @@ import MapKit
 let SegueName = "RunDetails"
 
 class RunViewController: UIViewController, CLLocationManagerDelegate {
-    var managedObjectContext: NSManagedObjectContext?
     
+    var managedObjectContext: NSManagedObjectContext?
     
     var run: Run!
     

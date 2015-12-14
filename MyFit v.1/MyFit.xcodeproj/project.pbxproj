@@ -32,7 +32,7 @@
 		B85527FC1C1DF67800D89BFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85527FB1C1DF67800D89BFA /* SystemConfiguration.framework */; };
 		B85527FE1C1DF69000D89BFA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B85527FD1C1DF69000D89BFA /* libz.dylib */; };
 		B85528001C1DF6A800D89BFA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B85527FF1C1DF6A800D89BFA /* libsqlite3.dylib */; };
-		B85528041C1E054900D89BFA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85528031C1E054900D89BFA /* MainViewController.swift */; };
+		B85528041C1E054900D89BFA /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85528031C1E054900D89BFA /* MusicViewController.swift */; };
 		B85528081C1E0C8A00D89BFA /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528051C1E0C8A00D89BFA /* Play.png */; };
 		B85528091C1E0C8A00D89BFA /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528061C1E0C8A00D89BFA /* Play@2x.png */; };
 		B855280A1C1E0C8A00D89BFA /* Play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528071C1E0C8A00D89BFA /* Play@3x.png */; };
@@ -105,7 +105,7 @@
 		B85527FB1C1DF67800D89BFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B85527FD1C1DF69000D89BFA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B85527FF1C1DF6A800D89BFA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		B85528031C1E054900D89BFA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B85528031C1E054900D89BFA /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B85528051C1E0C8A00D89BFA /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		B85528061C1E0C8A00D89BFA /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
 		B85528071C1E0C8A00D89BFA /* Play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@3x.png"; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 				B824C0D91C17872900C6A1D3 /* BMIResultViewController.swift */,
 				B824C0EE1C19F61A00C6A1D3 /* WaistRationViewController.swift */,
 				B8DE89AD1C1BCA8700800201 /* RunResultsViewController.swift */,
-				B85528031C1E054900D89BFA /* MainViewController.swift */,
+				B85528031C1E054900D89BFA /* MusicViewController.swift */,
 				B824C0ED1C186EE500C6A1D3 /* Design Files */,
 				B8EFE6031C13D0590008F2BD /* Images.xcassets */,
 				B8EFE6051C13D0590008F2BD /* LaunchScreen.xib */,
@@ -450,7 +450,7 @@
 				B824C0DE1C1788F300C6A1D3 /* BMICalculator.swift in Sources */,
 				B6FE38EB1C1CA440002F81BA /* Run.swift in Sources */,
 				B6FE38ED1C1CA4C4002F81BA /* Location.swift in Sources */,
-				B85528041C1E054900D89BFA /* MainViewController.swift in Sources */,
+				B85528041C1E054900D89BFA /* MusicViewController.swift in Sources */,
 				B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */,
 				B824C0EF1C19F61A00C6A1D3 /* WaistRationViewController.swift in Sources */,
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
