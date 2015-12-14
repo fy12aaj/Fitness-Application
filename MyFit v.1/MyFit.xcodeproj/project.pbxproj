@@ -263,8 +263,8 @@
 		B8EFE5F91C13D0580008F2BD /* MyFit */ = {
 			isa = PBXGroup;
 			children = (
-				B673CE951C1B135A00A52755 /* RunViewController.swift */,
 				B6F184E71C1E5037003338C1 /* Models */,
+				B673CE951C1B135A00A52755 /* RunViewController.swift */,
 				B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */,
 				B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */,
 				B8EFE5FE1C13D0590008F2BD /* ViewController.swift */,

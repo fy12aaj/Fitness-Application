@@ -10,6 +10,7 @@ import CoreData
 import UIKit
 import CoreLocation
 import HealthKit
+import MapKit
 
 let DetailSegueName = "RunDetails"
 
@@ -27,6 +28,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     //MARK: Variables
     
     var managedObjectContext: NSManagedObjectContext?
+    var run: Run!
     
     lazy var locationManager: CLLocationManager = {
         var _locationManager = CLLocationManager()
@@ -97,7 +99,11 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         actionSheet.showInView(view)
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let detailViewController = segue.destinationViewController as? RunResultsViewController {
+            detailViewController.run = run
+        }
+    }
     
     
     
@@ -105,7 +111,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func saveRun() {
-        var run: Run!
         // 1
         let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
             inManagedObjectContext: managedObjectContext!) as! Run
@@ -135,6 +140,21 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+}
+
+// MARK: - MKMapViewDelegate
+extension RunViewController: MKMapViewDelegate {
+    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+        if !overlay.isKindOfClass(MKPolyline) {
+            return nil
+        }
+        
+        let polyline = overlay as! MKPolyline
+        let renderer = MKPolylineRenderer(polyline: polyline)
+        renderer.strokeColor = UIColor.blueColor()
+        renderer.lineWidth = 3
+        return renderer
+    }
 }
 
 // MARK: - CLLocationManagerDelegate
