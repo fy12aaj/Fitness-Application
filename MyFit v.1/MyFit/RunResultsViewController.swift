@@ -14,7 +14,7 @@ import MapKit
 import Social
 
 class RunResultsViewController: UIViewController {
-    var run: Run?
+    var run: Run!
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var timeLabel: UILabel!

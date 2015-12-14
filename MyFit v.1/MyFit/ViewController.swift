@@ -7,16 +7,24 @@
 //
 
 import UIKit
-import MapKit
-import CoreLocation
+import CoreData
 
 
 class ViewController: UIViewController {
     
     //MARK: Outlet
-    @IBOutlet weak var theMap: MKMapView!
+    @IBOutlet weak var startRun: UIButton!
     
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.destinationViewController.isKindOfClass(RunViewController) {
+            if let RunViewController = segue.destinationViewController as? RunViewController {
+                RunViewController.managedObjectContext = managedObjectContext
+    
+            }
+        }
+    }
     
     
     override func viewDidLoad() {

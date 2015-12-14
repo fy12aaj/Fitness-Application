@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Abdulaziz Jamal. All rights reserved.
 //
 
-import CoreData
 import UIKit
+import CoreData
 import CoreLocation
 import HealthKit
 import MapKit
@@ -15,20 +15,19 @@ import MapKit
 let DetailSegueName = "RunDetails"
 
 class RunViewController: UIViewController, CLLocationManagerDelegate {
+    var managedObjectContext: NSManagedObjectContext?
     
-    //MARK: Outlets
+    
+    var run: Run!
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!    
+    @IBOutlet weak var promptLabel: UILabel!
     @IBOutlet weak var paceLabel: UILabel!
-    @IBOutlet weak var finishButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!    
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var mapView: MKMapView!
     
-    //MARK: Variables
-    
-    var managedObjectContext: NSManagedObjectContext?
-    var run: Run!
     var seconds = 0.0
     var distance = 0.0
     
@@ -46,32 +45,26 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     lazy var locations = [CLLocation]()
     lazy var timer = NSTimer()
     
-    //MARK: Load functions
-    
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        startButton.hidden = false
+        promptLabel.hidden = false
+        
+        timeLabel.hidden = true
+        distanceLabel.hidden = true
+        paceLabel.hidden = true
+        stopButton.hidden = false
+        
         locationManager.requestAlwaysAuthorization()
         
-        finishButton.hidden = true
+        mapView.hidden = true
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         timer.invalidate()
     }
-    
-    override func viewDidLoad() {
-        seconds = 0.0
-        distance = 0.0
-        locations.removeAll(keepCapacity: false)
-        timer = NSTimer.scheduledTimerWithTimeInterval(1,
-            target: self,
-            selector: "eachSecond:",
-            userInfo: nil,
-            repeats: true)
-        startLocationUpdates()
-    }
-    
-    //MARK: Location Tracking
     
     func eachSecond(timer: NSTimer) {
         seconds++
@@ -89,28 +82,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         // Here, the location manager will be lazily instantiated
         locationManager.startUpdatingLocation()
     }
-    
-    //MARK: Actions
-    
-    
-    @IBAction func stopClicked(sender: UIButton) {
-        stopButton.hidden = true
-        finishButton.hidden = false
-        let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
-        actionSheet.actionSheetStyle = .Default
-        actionSheet.showInView(view)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let detailViewController = segue.destinationViewController as? RunResultsViewController {
-            detailViewController.run = run
-        }
-    }
-    
-    
-    
-    //MARK: Saving the run
-    
     
     func saveRun() {
         // 1
@@ -134,12 +105,44 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         savedRun.locations = NSOrderedSet(array: savedLocations)
         run = savedRun
         
-        // error checking for run save
+        // 3
         var error: NSError?
         let success = managedObjectContext!.save(&error)
         if !success {
             println("Could not save the run!")
         }
+    }
+    
+    @IBAction func startPressed(sender: UIButton) {
+        startButton.hidden = true
+        promptLabel.hidden = true
+        
+        timeLabel.hidden = false
+        distanceLabel.hidden = false
+        paceLabel.hidden = false
+        stopButton.hidden = false
+        
+        seconds = 0.0
+        distance = 0.0
+        locations.removeAll(keepCapacity: false)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "eachSecond:", userInfo: nil, repeats: true)
+        startLocationUpdates()
+        
+        mapView.hidden = false
+        
+        saveRun()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let RunResultsViewController = segue.destinationViewController as? RunResultsViewController {
+            RunResultsViewController.run = run
+        }
+    }
+    
+    @IBAction func stopClicked(sender: UIButton) {
+        let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
+        actionSheet.actionSheetStyle = .Default
+        actionSheet.showInView(view)
     }
     
 }
@@ -163,10 +166,21 @@ extension RunViewController: MKMapViewDelegate {
 extension RunViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         for location in locations as! [CLLocation] {
-            if location.horizontalAccuracy < 20 {
+            let howRecent = location.timestamp.timeIntervalSinceNow
+            
+            if abs(howRecent) < 10 && location.horizontalAccuracy < 20 {
                 //update distance
                 if self.locations.count > 0 {
                     distance += location.distanceFromLocation(self.locations.last)
+                    
+                    var coords = [CLLocationCoordinate2D]()
+                    coords.append(self.locations.last!.coordinate)
+                    coords.append(location.coordinate)
+                    
+                    let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 500, 500)
+                    mapView.setRegion(region, animated: true)
+                    
+                    mapView.addOverlay(MKPolyline(coordinates: &coords, count: coords.count))
                 }
                 
                 //save location
@@ -176,12 +190,11 @@ extension RunViewController: CLLocationManagerDelegate {
     }
 }
 
-// MARK: UIActionSheetDelegate
+// MARK: - UIActionSheetDelegate
 extension RunViewController: UIActionSheetDelegate {
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
         //save
         if buttonIndex == 1 {
-            saveRun()
             performSegueWithIdentifier(DetailSegueName, sender: nil)
         }
             //discard
@@ -190,3 +203,4 @@ extension RunViewController: UIActionSheetDelegate {
         }
     }
 }
+

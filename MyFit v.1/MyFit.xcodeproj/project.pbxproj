@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B65203CD1C1E667B00EA7BA7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65203CC1C1E667B00EA7BA7 /* CoreData.framework */; };
 		B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE951C1B135A00A52755 /* RunViewController.swift */; };
-		B6F184E61C1E4FAE003338C1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F184E41C1E4FAE003338C1 /* DataModel.xcdatamodeld */; };
+		B6F184E61C1E4FAE003338C1 /* MyFit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F184E41C1E4FAE003338C1 /* MyFit.xcdatamodeld */; };
 		B6FE38EB1C1CA440002F81BA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE38EA1C1CA440002F81BA /* Run.swift */; };
 		B6FE38ED1C1CA4C4002F81BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE38EC1C1CA4C4002F81BA /* Location.swift */; };
 		B6FE38EF1C1CA58E002F81BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */; };
@@ -77,8 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B65203CC1C1E667B00EA7BA7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
-		B6F184E51C1E4FAE003338C1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		B6F184E51C1E4FAE003338C1 /* MyFit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFit.xcdatamodel; sourceTree = "<group>"; };
 		B6FE38EA1C1CA440002F81BA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		B6FE38EC1C1CA4C4002F81BA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -145,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65203CD1C1E667B00EA7BA7 /* CoreData.framework in Frameworks */,
 				B85528001C1DF6A800D89BFA /* libsqlite3.dylib in Frameworks */,
 				B85527FE1C1DF69000D89BFA /* libz.dylib in Frameworks */,
 				B85527FC1C1DF67800D89BFA /* SystemConfiguration.framework in Frameworks */,
@@ -244,6 +247,7 @@
 		B8EFE5EE1C13D0580008F2BD = {
 			isa = PBXGroup;
 			children = (
+				B65203CC1C1E667B00EA7BA7 /* CoreData.framework */,
 				B8E5FDF11C1B9EB500C7D323 /* framworks */,
 				B8EFE5F91C13D0580008F2BD /* MyFit */,
 				B8EFE60F1C13D0590008F2BD /* MyFitTests */,
@@ -277,7 +281,7 @@
 				B8EFE6031C13D0590008F2BD /* Images.xcassets */,
 				B8EFE6051C13D0590008F2BD /* LaunchScreen.xib */,
 				B855280B1C1E0ED000D89BFA /* Main.storyboard */,
-				B6F184E41C1E4FAE003338C1 /* DataModel.xcdatamodeld */,
+				B6F184E41C1E4FAE003338C1 /* MyFit.xcdatamodeld */,
 				B8EFE5FA1C13D0580008F2BD /* Supporting Files */,
 			);
 			path = MyFit;
@@ -444,7 +448,7 @@
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
 				B85527E21C1DF42C00D89BFA /* PlayContainer.swift in Sources */,
 				B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */,
-				B6F184E61C1E4FAE003338C1 /* DataModel.xcdatamodeld in Sources */,
+				B6F184E61C1E4FAE003338C1 /* MyFit.xcdatamodeld in Sources */,
 				B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */,
 				B8DE89AE1C1BCA8700800201 /* RunResultsViewController.swift in Sources */,
 			);
@@ -666,13 +670,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B6F184E41C1E4FAE003338C1 /* DataModel.xcdatamodeld */ = {
+		B6F184E41C1E4FAE003338C1 /* MyFit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B6F184E51C1E4FAE003338C1 /* DataModel.xcdatamodel */,
+				B6F184E51C1E4FAE003338C1 /* MyFit.xcdatamodel */,
 			);
-			currentVersion = B6F184E51C1E4FAE003338C1 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			currentVersion = B6F184E51C1E4FAE003338C1 /* MyFit.xcdatamodel */;
+			path = MyFit.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
