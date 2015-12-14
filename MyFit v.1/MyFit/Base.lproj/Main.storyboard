@@ -191,7 +191,7 @@
                     <connections>
                         <outlet property="distanceLabel" destination="DqK-Ah-QDh" id="pxK-HY-IMn"/>
                         <outlet property="hiddenButton" destination="YEJ-qf-hrs" id="3Es-me-FPM"/>
-                        <outlet property="mapView" destination="ouL-FM-udz" id="sJh-0s-XVq"/>
+                        <outlet property="mapView" destination="ouL-FM-udz" id="1Ab-Lg-eoq"/>
                         <outlet property="paceLabel" destination="9WS-hp-h7e" id="Wlv-uP-O1g"/>
                         <outlet property="promptLabel" destination="vOP-cK-NdO" id="ENC-y2-Mvo"/>
                         <outlet property="startButton" destination="FOS-v4-E1W" id="7xA-H2-CiA"/>

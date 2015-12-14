@@ -26,8 +26,8 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!    
     @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var hiddenButton: UIButton!
+    @IBOutlet weak var mapView: MKMapView!
     
     var seconds = 0.0
     var distance = 0.0
