@@ -20,7 +20,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!    
-    @IBOutlet weak var paceLabel: UILabel!    
+    @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
@@ -92,11 +92,12 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func stopClicked(sender: UIButton) {
-        saveRun()
+        //saveRun()
         let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
         actionSheet.actionSheetStyle = .Default
         actionSheet.showInView(view)
     }
+    
     
     
     
