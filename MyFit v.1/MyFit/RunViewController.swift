@@ -51,6 +51,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         
         startButton.hidden = false
         promptLabel.hidden = false
+        stopButton.hidden = true
         
         timeLabel.hidden = true
         distanceLabel.hidden = true

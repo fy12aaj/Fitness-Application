@@ -161,14 +161,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-v4-E1W">
-                                <rect key="frame" x="16" y="267" width="52" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-v4-E1W">
+                                <rect key="frame" x="16" y="238" width="43" height="36"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="wtg-Kj-bZO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Finish">
+                                <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -188,7 +188,7 @@
                                 <rect key="frame" x="5" y="311" width="409" height="376"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08N-5H-bzg">
-                                <rect key="frame" x="16" y="238" width="45" height="36"/>
+                                <rect key="frame" x="16" y="267" width="45" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="NlS-aX-3Ge"/>
                                 </constraints>
@@ -209,14 +209,14 @@
                             <constraint firstItem="FOS-v4-E1W" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" id="3qm-YL-Ww2"/>
                             <constraint firstItem="vOP-cK-NdO" firstAttribute="top" secondItem="DqK-Ah-QDh" secondAttribute="bottom" constant="8" id="5Ug-V5-XVY"/>
                             <constraint firstItem="9WS-hp-h7e" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" id="EDT-eY-R7z"/>
-                            <constraint firstItem="08N-5H-bzg" firstAttribute="top" secondItem="9WS-hp-h7e" secondAttribute="bottom" constant="8" id="Ebb-Hi-rzw"/>
+                            <constraint firstItem="08N-5H-bzg" firstAttribute="top" secondItem="9WS-hp-h7e" secondAttribute="bottom" constant="37" id="Ebb-Hi-rzw"/>
                             <constraint firstItem="DqK-Ah-QDh" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" id="JB1-28-evR"/>
-                            <constraint firstItem="ouL-FM-udz" firstAttribute="top" secondItem="FOS-v4-E1W" secondAttribute="bottom" constant="8" id="JRW-pl-IXb"/>
+                            <constraint firstItem="ouL-FM-udz" firstAttribute="top" secondItem="FOS-v4-E1W" secondAttribute="bottom" constant="37" id="JRW-pl-IXb"/>
                             <constraint firstItem="9WS-hp-h7e" firstAttribute="top" secondItem="vOP-cK-NdO" secondAttribute="bottom" constant="8" id="Utn-jH-KW8"/>
                             <constraint firstItem="zxd-hu-xZL" firstAttribute="top" secondItem="EZn-bT-eFY" secondAttribute="bottom" constant="8" id="Vik-FM-zzg"/>
                             <constraint firstItem="zxd-hu-xZL" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" id="YDf-GD-bOc"/>
                             <constraint firstItem="ouL-FM-udz" firstAttribute="leading" secondItem="4VW-7t-Tut" secondAttribute="leadingMargin" constant="-11" id="ciF-1k-tZN"/>
-                            <constraint firstItem="FOS-v4-E1W" firstAttribute="top" secondItem="08N-5H-bzg" secondAttribute="bottom" constant="-7" id="fVr-Ux-fLd"/>
+                            <constraint firstItem="FOS-v4-E1W" firstAttribute="top" secondItem="08N-5H-bzg" secondAttribute="bottom" constant="-65" id="fVr-Ux-fLd"/>
                             <constraint firstItem="DqK-Ah-QDh" firstAttribute="top" secondItem="zxd-hu-xZL" secondAttribute="bottom" constant="8" id="fem-WG-8fs"/>
                         </constraints>
                     </view>
