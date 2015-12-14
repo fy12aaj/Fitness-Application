@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CE951C1B135A00A52755 /* RunViewController.swift */; };
+		B6F184E61C1E4FAE003338C1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F184E41C1E4FAE003338C1 /* DataModel.xcdatamodeld */; };
 		B6FE38EB1C1CA440002F81BA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE38EA1C1CA440002F81BA /* Run.swift */; };
 		B6FE38ED1C1CA4C4002F81BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE38EC1C1CA4C4002F81BA /* Location.swift */; };
 		B6FE38EF1C1CA58E002F81BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		B673CE951C1B135A00A52755 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		B6F184E51C1E4FAE003338C1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		B6FE38EA1C1CA440002F81BA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		B6FE38EC1C1CA4C4002F81BA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B6FE38EE1C1CA58E002F81BA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -175,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6F184E71C1E5037003338C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6FE38EA1C1CA440002F81BA /* Run.swift */,
+				B6FE38EC1C1CA4C4002F81BA /* Location.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B824C0ED1C186EE500C6A1D3 /* Design Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				B673CE951C1B135A00A52755 /* RunViewController.swift */,
-				B6FE38EC1C1CA4C4002F81BA /* Location.swift */,
-				B6FE38EA1C1CA440002F81BA /* Run.swift */,
+				B6F184E71C1E5037003338C1 /* Models */,
 				B824C0DD1C1788F300C6A1D3 /* BMICalculator.swift */,
 				B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */,
 				B8EFE5FE1C13D0590008F2BD /* ViewController.swift */,
@@ -267,6 +277,7 @@
 				B8EFE6031C13D0590008F2BD /* Images.xcassets */,
 				B8EFE6051C13D0590008F2BD /* LaunchScreen.xib */,
 				B855280B1C1E0ED000D89BFA /* Main.storyboard */,
+				B6F184E41C1E4FAE003338C1 /* DataModel.xcdatamodeld */,
 				B8EFE5FA1C13D0580008F2BD /* Supporting Files */,
 			);
 			path = MyFit;
@@ -433,6 +444,7 @@
 				B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */,
 				B85527E21C1DF42C00D89BFA /* PlayContainer.swift in Sources */,
 				B673CE961C1B135A00A52755 /* RunViewController.swift in Sources */,
+				B6F184E61C1E4FAE003338C1 /* DataModel.xcdatamodeld in Sources */,
 				B824C0DA1C17872900C6A1D3 /* BMIResultViewController.swift in Sources */,
 				B8DE89AE1C1BCA8700800201 /* RunResultsViewController.swift in Sources */,
 			);
@@ -652,6 +664,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6F184E41C1E4FAE003338C1 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6F184E51C1E4FAE003338C1 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = B6F184E51C1E4FAE003338C1 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8EFE5EF1C13D0580008F2BD /* Project object */;
 }
