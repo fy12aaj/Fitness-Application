@@ -15,6 +15,7 @@ import MapKit
 class RunResultsViewController: UIViewController {
     var run: Run!
     
+    //MARK: Labels
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
@@ -33,7 +34,8 @@ class RunResultsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    //MARK: Displaying Run
+    //MARK: Func
+   //Displaying Run
     
     func configureView(){ // Display Distance in meters.
         let distanceQuantity = HKQuantity(unit: HKUnit.meterUnit(), doubleValue: run!.distance.doubleValue)
