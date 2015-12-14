@@ -75,8 +75,8 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         distanceLabel.text = "Distance: " + distanceQuantity.description
         
         let paceUnit = HKUnit.secondUnit().unitDividedByUnit(HKUnit.meterUnit())
-        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: seconds / distance)
-        paceLabel.text = "Pace: " + paceQuantity.description
+        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: ((distance / seconds)/1000)*60)
+        paceLabel.text = "Pace: " + paceQuantity.description + "KM/Min"
     }
     
     func startLocationUpdates() {
@@ -157,7 +157,7 @@ extension RunViewController: MKMapViewDelegate {
         
         let polyline = overlay as! MKPolyline
         let renderer = MKPolylineRenderer(polyline: polyline)
-        renderer.strokeColor = UIColor.redColor()
+        renderer.strokeColor = UIColor.blueColor()
         renderer.lineWidth = 3
         return renderer
     }
