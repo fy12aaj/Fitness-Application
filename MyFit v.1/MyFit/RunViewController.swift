@@ -107,7 +107,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     func saveRun() {
         // 1
-        let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
+        let savedRun = NSEntityDescription.insertNewObjectForEntityForName("run",
             inManagedObjectContext: managedObjectContext!) as! Run
         savedRun.distance = distance
         savedRun.duration = seconds

@@ -168,6 +168,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopClicked:" destination="W74-my-gu4" eventType="touchUpInside" id="VR4-w5-tzR"/>
+                                    <segue destination="bPg-zM-6V1" kind="show" id="hmc-so-pb2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOP-cK-NdO">
