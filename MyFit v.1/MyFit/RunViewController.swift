@@ -27,6 +27,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var stopButton: UIButton!    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var hiddenButton: UIButton!
     
     var seconds = 0.0
     var distance = 0.0
@@ -54,7 +55,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         timeLabel.hidden = true
         distanceLabel.hidden = true
         paceLabel.hidden = true
-        stopButton.hidden = false
+        hiddenButton.hidden = true
         
         locationManager.requestAlwaysAuthorization()
         
@@ -129,8 +130,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         startLocationUpdates()
         
         mapView.hidden = false
-        
-        saveRun()
+    
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -140,6 +140,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func stopClicked(sender: UIButton) {
+        saveRun()
         let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
         actionSheet.actionSheetStyle = .Default
         actionSheet.showInView(view)

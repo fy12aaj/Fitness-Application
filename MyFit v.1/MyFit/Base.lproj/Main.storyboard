@@ -172,7 +172,15 @@
                                 </state>
                                 <connections>
                                     <action selector="stopClicked:" destination="W74-my-gu4" eventType="touchUpInside" id="Bn4-mg-Mfc"/>
-                                    <segue destination="bPg-zM-6V1" kind="show" identifier="RunDetails" id="6FX-yf-ukf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEJ-qf-hrs">
+                                <rect key="frame" x="184" y="593" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bPg-zM-6V1" kind="show" identifier="RunDetails" id="y3I-Mw-3go"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,6 +190,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="distanceLabel" destination="DqK-Ah-QDh" id="pxK-HY-IMn"/>
+                        <outlet property="hiddenButton" destination="YEJ-qf-hrs" id="3Es-me-FPM"/>
                         <outlet property="mapView" destination="ouL-FM-udz" id="sJh-0s-XVq"/>
                         <outlet property="paceLabel" destination="9WS-hp-h7e" id="Wlv-uP-O1g"/>
                         <outlet property="promptLabel" destination="vOP-cK-NdO" id="ENC-y2-Mvo"/>
