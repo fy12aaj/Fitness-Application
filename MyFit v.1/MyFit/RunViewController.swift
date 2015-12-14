@@ -105,6 +105,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func saveRun() {
+        var run: Run!
         // 1
         let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
             inManagedObjectContext: managedObjectContext!) as! Run
@@ -124,7 +125,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         savedRun.locations = NSOrderedSet(array: savedLocations)
-        var run: Run = savedRun
+        run = savedRun
         
         // error checking for run save
         var error: NSError?
