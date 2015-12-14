@@ -11,19 +11,21 @@ import UIKit
 
 class MainViewController : UIViewController {
     
+    //MARK: Labels.
     @IBOutlet weak var Pause: UIButton!
     @IBOutlet weak var Play: UIButton!
     
+    //MARK: Functions.
     @IBAction func Pause(sender: AnyObject) {
         
-        AudioPlayer.pause()
+        AudioPlayer.pause() // Pause the audio.
     }
     
     
     
     @IBAction func Play(sender: AnyObject) {
         
-        AudioPlayer.play()
+        AudioPlayer.play() // Play the audio.
     }
     
     
