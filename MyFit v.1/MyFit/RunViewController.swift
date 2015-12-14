@@ -12,7 +12,7 @@ import CoreLocation
 import HealthKit
 import MapKit
 
-let DetailSegueName = "RunDetails"
+let SegueName = "RunDetails"
 
 class RunViewController: UIViewController, CLLocationManagerDelegate {
     var managedObjectContext: NSManagedObjectContext?
@@ -20,6 +20,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     var run: Run!
     
+    //outlets
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var paceLabel: UILabel!
@@ -38,7 +39,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest
         _locationManager.activityType = .Fitness
         
-        // Movement threshold for new events
+        // Filter threshold for new movement events
         _locationManager.distanceFilter = 10.0
         return _locationManager
         }()
@@ -46,13 +47,13 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     lazy var locations = [CLLocation]()
     lazy var timer = NSTimer()
     
+    //override for when view is displayed
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         startButton.hidden = false
         dateLabel.hidden = false
         stopButton.hidden = true
-        
         timeLabel.hidden = true
         distanceLabel.hidden = true
         paceLabel.hidden = true
@@ -75,9 +76,9 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         let distanceQuantity = HKQuantity(unit: HKUnit.meterUnit(), doubleValue: distance)
         distanceLabel.text = "Distance: " + distanceQuantity.description
         
-        let paceUnit = HKUnit.secondUnit().unitDividedByUnit(HKUnit.meterUnit())
-        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: ((distance / seconds)/1000)*60)
-        paceLabel.text = "Pace: " + paceQuantity.description + "KM/Min"
+        let paceUnit = HKUnit.meterUnit().unitDividedByUnit(HKUnit.secondUnit())
+        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: (distance / seconds))
+        paceLabel.text = "Pace: " + paceQuantity.description
     }
     
     func startLocationUpdates() {
@@ -197,7 +198,7 @@ extension RunViewController: UIActionSheetDelegate {
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
         //save
         if buttonIndex == 1 {
-            performSegueWithIdentifier(DetailSegueName, sender: nil)
+            performSegueWithIdentifier(SegueName, sender: nil)
         }
             //discard
         else if buttonIndex == 2 {
