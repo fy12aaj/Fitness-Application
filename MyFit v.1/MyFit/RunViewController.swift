@@ -92,7 +92,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func stopClicked(sender: UIButton) {
-        //saveRun()
         let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
         actionSheet.actionSheetStyle = .Default
         actionSheet.showInView(view)
@@ -158,6 +157,7 @@ extension RunViewController: UIActionSheetDelegate {
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
         //save
         if buttonIndex == 1 {
+            saveRun()
             performSegueWithIdentifier(DetailSegueName, sender: nil)
         }
             //discard
