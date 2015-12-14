@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
+    //override for segue, to pass managdObjectContext to RunViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.destinationViewController.isKindOfClass(RunViewController) {
             if let RunViewController = segue.destinationViewController as? RunViewController {
@@ -25,7 +26,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
