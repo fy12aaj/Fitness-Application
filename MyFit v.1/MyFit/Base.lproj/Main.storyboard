@@ -346,8 +346,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="n7S-P4-WZ1" secondAttribute="trailing" constant="68" id="e8e-eI-VUE"/>
                             <constraint firstItem="n7S-P4-WZ1" firstAttribute="top" secondItem="wwf-ja-Zr8" secondAttribute="bottom" constant="8" id="faw-wl-IuK"/>
                             <constraint firstItem="cyN-qn-wER" firstAttribute="top" secondItem="cmb-er-0ta" secondAttribute="bottom" constant="10" id="hM6-uG-5TH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="d2W-bL-OGj" secondAttribute="trailing" constant="113" id="uEs-gQ-Wm2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="alO-zz-4bd" secondAttribute="trailing" constant="113" id="xde-1f-GyE"/>
                             <constraint firstItem="GKi-BJ-0BW" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="38" id="zao-nU-eft"/>
                         </constraints>
                     </view>
