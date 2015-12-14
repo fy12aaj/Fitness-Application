@@ -301,16 +301,6 @@
                                     <action selector="twitterAction:" destination="bPg-zM-6V1" eventType="touchUpInside" id="cXx-9h-Iq2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7S-P4-WZ1">
-                                <rect key="frame" x="64" y="463" width="266" height="27"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="266" id="5QS-c0-2n1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-bL-OGj">
                                 <rect key="frame" x="130" y="601" width="155" height="42"/>
                                 <animations/>
@@ -327,11 +317,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share with Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-BJ-0BW">
-                                <rect key="frame" x="95" y="510" width="225" height="31"/>
+                                <rect key="frame" x="54" y="510" width="306" height="31"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="T5o-ph-SSC"/>
-                                    <constraint firstAttribute="width" constant="225" id="VDV-KB-Kte"/>
+                                    <constraint firstAttribute="width" constant="306" id="VDV-KB-Kte"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -341,6 +331,16 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="284"/>
                                 <animations/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7S-P4-WZ1">
+                                <rect key="frame" x="64" y="463" width="266" height="27"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="5QS-c0-2n1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,7 +354,7 @@
                             <constraint firstItem="n7S-P4-WZ1" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="48" id="ILe-Es-1Y5"/>
                             <constraint firstItem="alO-zz-4bd" firstAttribute="top" secondItem="GKi-BJ-0BW" secondAttribute="bottom" constant="8" id="LlF-4Q-Otz"/>
                             <constraint firstItem="cmb-er-0ta" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="48" id="N3m-d7-CGw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GKi-BJ-0BW" secondAttribute="trailing" constant="78" id="OFu-VN-FTE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GKi-BJ-0BW" secondAttribute="trailing" constant="38" id="OFu-VN-FTE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cmb-er-0ta" secondAttribute="trailing" constant="2" id="Psz-qb-psn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cyN-qn-wER" secondAttribute="trailing" constant="2" id="QBe-DA-59N"/>
                             <constraint firstItem="d2W-bL-OGj" firstAttribute="top" secondItem="alO-zz-4bd" secondAttribute="bottom" constant="13" id="UkW-7N-a76"/>
@@ -369,7 +369,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="d2W-bL-OGj" secondAttribute="trailing" constant="113" id="uEs-gQ-Wm2"/>
                             <constraint firstItem="alO-zz-4bd" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="114" id="vKo-GY-jnu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="alO-zz-4bd" secondAttribute="trailing" constant="113" id="xde-1f-GyE"/>
-                            <constraint firstItem="GKi-BJ-0BW" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="79" id="zao-nU-eft"/>
+                            <constraint firstItem="GKi-BJ-0BW" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="38" id="zao-nU-eft"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="G52-aE-UJy"/>
