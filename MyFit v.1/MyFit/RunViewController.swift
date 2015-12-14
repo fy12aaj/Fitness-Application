@@ -52,7 +52,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         super.viewWillAppear(animated)
         
         startButton.hidden = false
-        dateLabel.hidden = false
         stopButton.hidden = true
         timeLabel.hidden = true
         distanceLabel.hidden = true
@@ -118,7 +117,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func startPressed(sender: UIButton) {
         startButton.hidden = true
-        dateLabel.hidden = true
         
         timeLabel.hidden = false
         distanceLabel.hidden = false
