@@ -47,8 +47,8 @@ class RunResultsViewController: UIViewController {
         timeLabel.text = "Time: " + secondsQuantity.description
         
         let paceUnit = HKUnit.secondUnit().unitDividedByUnit(HKUnit.meterUnit())
-        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: run!.duration.doubleValue / run!.distance.doubleValue)
-        paceLabel.text = "Pace: " + paceQuantity.description
+        let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: run!.distance.doubleValue / run!.duration.doubleValue)
+        paceLabel.text = "Average Pace: " + paceQuantity.description + "KM/Min"
         
         loadMap()
     }
