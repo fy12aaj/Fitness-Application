@@ -153,10 +153,6 @@
                                     <segue destination="bPg-zM-6V1" kind="show" identifier="RunDetails" id="y3I-Mw-3go"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-FM-udz">
-                                <rect key="frame" x="5" y="311" width="409" height="376"/>
-                                <animations/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08N-5H-bzg">
                                 <rect key="frame" x="16" y="267" width="45" height="36"/>
                                 <animations/>
@@ -181,6 +177,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-FM-udz">
+                                <rect key="frame" x="5" y="311" width="409" height="376"/>
+                                <animations/>
+                            </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -197,6 +197,7 @@
                             <constraint firstItem="FOS-v4-E1W" firstAttribute="top" secondItem="9WS-hp-h7e" secondAttribute="bottom" constant="49" id="eSv-fe-hbs"/>
                             <constraint firstItem="DqK-Ah-QDh" firstAttribute="top" secondItem="zxd-hu-xZL" secondAttribute="bottom" constant="8" id="fem-WG-8fs"/>
                             <constraint firstItem="9WS-hp-h7e" firstAttribute="top" secondItem="DqK-Ah-QDh" secondAttribute="bottom" constant="8" id="gge-zA-iRt"/>
+                            <constraint firstItem="OAk-JI-axO" firstAttribute="top" secondItem="ouL-FM-udz" secondAttribute="bottom" id="kuF-B4-rL4"/>
                             <constraint firstItem="ouL-FM-udz" firstAttribute="top" secondItem="EZn-bT-eFY" secondAttribute="bottom" constant="247" id="xrE-HP-9SG"/>
                         </constraints>
                     </view>
@@ -264,21 +265,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alO-zz-4bd">
-                                <rect key="frame" x="130" y="549" width="155" height="39"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="alO-zz-4bd" secondAttribute="height" multiplier="155:39" id="D29-Xz-fHY"/>
-                                    <constraint firstAttribute="width" constant="155" id="YcW-wq-eXb"/>
-                                </constraints>
-                                <state key="normal" title="Share on Twitter" image="twitter-share-button.png">
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="twitterAction:" destination="bPg-zM-6V1" eventType="touchUpInside" id="cXx-9h-Iq2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-bL-OGj">
                                 <rect key="frame" x="130" y="601" width="155" height="42"/>
                                 <animations/>
@@ -319,10 +305,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alO-zz-4bd">
+                                <rect key="frame" x="130" y="549" width="155" height="39"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="alO-zz-4bd" secondAttribute="height" multiplier="155:39" id="D29-Xz-fHY"/>
+                                    <constraint firstAttribute="width" constant="155" id="YcW-wq-eXb"/>
+                                </constraints>
+                                <state key="normal" title="Share on Twitter" image="twitter-share-button.png">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterAction:" destination="bPg-zM-6V1" eventType="touchUpInside" id="cXx-9h-Iq2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="alO-zz-4bd" secondAttribute="centerX" constant="-0.5" id="1jt-ol-LkJ"/>
                             <constraint firstItem="m87-P0-7aO" firstAttribute="top" secondItem="t40-GE-gjO" secondAttribute="bottom" id="7Q2-T8-Uyn"/>
                             <constraint firstAttribute="centerX" secondItem="m87-P0-7aO" secondAttribute="centerX" id="8CU-Q1-qKQ"/>
                             <constraint firstItem="wwf-ja-Zr8" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="48" id="ERR-hH-uJD"/>
@@ -339,13 +341,12 @@
                             <constraint firstItem="cyN-qn-wER" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="48" id="Vq2-zu-B5N"/>
                             <constraint firstItem="FVt-v7-prM" firstAttribute="top" secondItem="d2W-bL-OGj" secondAttribute="bottom" constant="44" id="bJB-RN-1wF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="m87-P0-7aO" secondAttribute="trailing" constant="-16" id="blg-8s-TZc"/>
+                            <constraint firstAttribute="centerX" secondItem="d2W-bL-OGj" secondAttribute="centerX" constant="-0.5" id="dRM-TG-9NU"/>
                             <constraint firstItem="GKi-BJ-0BW" firstAttribute="top" secondItem="n7S-P4-WZ1" secondAttribute="bottom" constant="20" id="dXL-ix-GIa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n7S-P4-WZ1" secondAttribute="trailing" constant="68" id="e8e-eI-VUE"/>
-                            <constraint firstItem="d2W-bL-OGj" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="114" id="fQi-c7-vJv"/>
                             <constraint firstItem="n7S-P4-WZ1" firstAttribute="top" secondItem="wwf-ja-Zr8" secondAttribute="bottom" constant="8" id="faw-wl-IuK"/>
                             <constraint firstItem="cyN-qn-wER" firstAttribute="top" secondItem="cmb-er-0ta" secondAttribute="bottom" constant="10" id="hM6-uG-5TH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d2W-bL-OGj" secondAttribute="trailing" constant="113" id="uEs-gQ-Wm2"/>
-                            <constraint firstItem="alO-zz-4bd" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="114" id="vKo-GY-jnu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="alO-zz-4bd" secondAttribute="trailing" constant="113" id="xde-1f-GyE"/>
                             <constraint firstItem="GKi-BJ-0BW" firstAttribute="leading" secondItem="IUD-di-U7M" secondAttribute="leadingMargin" constant="38" id="zao-nU-eft"/>
                         </constraints>
