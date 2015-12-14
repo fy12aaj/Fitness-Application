@@ -71,14 +71,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Qh-vo-qQ2" secondAttribute="bottom" constant="141" id="4aZ-jC-KfE"/>
                             <constraint firstItem="ysz-rh-Kb3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="8LC-Bg-FsP"/>
                             <constraint firstAttribute="centerX" secondItem="ysz-rh-Kb3" secondAttribute="centerX" constant="-0.5" id="92f-ll-lSE"/>
                             <constraint firstItem="J0e-i4-2pk" firstAttribute="top" secondItem="ysz-rh-Kb3" secondAttribute="bottom" constant="15" id="ICG-Hc-D8a"/>
-                            <constraint firstItem="8Qh-vo-qQ2" firstAttribute="top" secondItem="fn3-SE-4lU" secondAttribute="bottom" constant="222" id="WDi-0W-eFD"/>
                             <constraint firstAttribute="centerX" secondItem="J0e-i4-2pk" secondAttribute="centerX" id="fYg-zp-7kS"/>
                             <constraint firstItem="fn3-SE-4lU" firstAttribute="top" secondItem="kyr-zp-g65" secondAttribute="bottom" constant="8" id="h0A-ds-t8i"/>
                             <constraint firstAttribute="centerX" secondItem="8Qh-vo-qQ2" secondAttribute="centerX" constant="-0.5" id="hwC-pz-VpN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Qh-vo-qQ2" secondAttribute="bottom" constant="141" id="pAB-jd-b5h"/>
                             <constraint firstAttribute="centerX" secondItem="kyr-zp-g65" secondAttribute="centerX" id="uOd-S4-2Hk"/>
                             <constraint firstItem="kyr-zp-g65" firstAttribute="top" secondItem="J0e-i4-2pk" secondAttribute="bottom" constant="79" id="x7P-xP-bc0"/>
                             <constraint firstAttribute="centerX" secondItem="fn3-SE-4lU" secondAttribute="centerX" id="xC3-Ak-ZUo"/>
