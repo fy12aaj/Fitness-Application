@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="height" constant="45" id="1Ly-of-tBO"/>
                                     <constraint firstAttribute="width" constant="178" id="7Ch-xz-1dl"/>
                                 </constraints>
-                                <state key="normal" title="Start Timed Run" image="Start-Time-Button.png">
+                                <state key="normal" title="Start Timed Run" image="Start-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -142,10 +142,11 @@
                                     <navigationItem title="Running" id="ljZ-4C-IFj"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-v4-E1W">
-                                <rect key="frame" x="16" y="238" width="220" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-v4-E1W">
+                                <rect key="frame" x="16" y="238" width="43" height="36"/>
                                 <animations/>
-                                <state key="normal" title="Start" image="Start-Button.png">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -167,7 +168,7 @@
                                 <animations/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08N-5H-bzg">
-                                <rect key="frame" x="16" y="271" width="45" height="36"/>
+                                <rect key="frame" x="16" y="267" width="45" height="36"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="Izw-tP-vho"/>
@@ -1050,7 +1051,6 @@
         <image name="Play" width="24" height="24"/>
         <image name="Play-Button.png" width="77" height="40"/>
         <image name="Start-Button.png" width="127" height="40"/>
-        <image name="Start-Time-Button.png" width="181" height="40"/>
         <image name="WTH-Button.png" width="84" height="40"/>
         <image name="calculate.png" width="184" height="48"/>
         <image name="facebook-share-button.png" width="243" height="59"/>
