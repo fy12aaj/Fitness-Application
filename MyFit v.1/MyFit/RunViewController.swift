@@ -22,12 +22,12 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var promptLabel: UILabel!
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var hiddenButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var dateLabel: UILabel!
     
     var seconds = 0.0
     var distance = 0.0
@@ -50,7 +50,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         super.viewWillAppear(animated)
         
         startButton.hidden = false
-        promptLabel.hidden = false
+        dateLabel.hidden = false
         stopButton.hidden = true
         
         timeLabel.hidden = true
@@ -117,7 +117,7 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func startPressed(sender: UIButton) {
         startButton.hidden = true
-        promptLabel.hidden = true
+        dateLabel.hidden = true
         
         timeLabel.hidden = false
         distanceLabel.hidden = false
