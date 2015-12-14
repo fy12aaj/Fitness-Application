@@ -48,7 +48,7 @@ class RunResultsViewController: UIViewController {
         
         let paceUnit = HKUnit.meterUnit().unitDividedByUnit(HKUnit.secondUnit())
         let paceQuantity = HKQuantity(unit: paceUnit, doubleValue: run!.distance.doubleValue / run!.duration.doubleValue)
-        paceLabel.text = "Average Pace: " + paceQuantity.description
+        paceLabel.text = "Pace: " + paceQuantity.description
         
         loadMap()
     }
