@@ -40,7 +40,6 @@
 		B85528131C1E1ADA00D89BFA /* calculate.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528101C1E1ADA00D89BFA /* calculate.png */; };
 		B85528161C1E213E00D89BFA /* facebook-share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528141C1E213E00D89BFA /* facebook-share-button.png */; };
 		B85528171C1E213E00D89BFA /* twitter-share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B85528151C1E213E00D89BFA /* twitter-share-button.png */; };
-		B8D9E5C41C1E299F00ADF237 /* Start-Time-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C11C1E299F00ADF237 /* Start-Time-Button.png */; };
 		B8D9E5C51C1E299F00ADF237 /* Play-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C21C1E299F00ADF237 /* Play-Button.png */; };
 		B8D9E5C61C1E299F00ADF237 /* Pause-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C31C1E299F00ADF237 /* Pause-Button.png */; };
 		B8D9E5C91C1E2AC500ADF237 /* WTH-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9E5C71C1E2AC500ADF237 /* WTH-Button.png */; };
@@ -58,6 +57,9 @@
 		B8DE89C61C1C90B000800201 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89C41C1C90B000800201 /* Icon-60@3x.png */; };
 		B8DE89C91C1C90CC00800201 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89C71C1C90CC00800201 /* Icon-76.png */; };
 		B8DE89CA1C1C90CC00800201 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DE89C81C1C90CC00800201 /* Icon-76@2x.png */; };
+		B8EAF3AD1C1EB1F8003B174A /* Start-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EAF3AA1C1EB1F8003B174A /* Start-Button.png */; };
+		B8EAF3AE1C1EB1F8003B174A /* Finish-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EAF3AB1C1EB1F8003B174A /* Finish-Button.png */; };
+		B8EAF3AF1C1EB1F8003B174A /* Stop-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EAF3AC1C1EB1F8003B174A /* Stop-Button.png */; };
 		B8EFE5FD1C13D0580008F2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */; };
 		B8EFE5FF1C13D0590008F2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFE5FE1C13D0590008F2BD /* ViewController.swift */; };
 		B8EFE6041C13D0590008F2BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EFE6031C13D0590008F2BD /* Images.xcassets */; };
@@ -111,7 +113,6 @@
 		B85528101C1E1ADA00D89BFA /* calculate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculate.png; sourceTree = "<group>"; };
 		B85528141C1E213E00D89BFA /* facebook-share-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-share-button.png"; sourceTree = "<group>"; };
 		B85528151C1E213E00D89BFA /* twitter-share-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-share-button.png"; sourceTree = "<group>"; };
-		B8D9E5C11C1E299F00ADF237 /* Start-Time-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Start-Time-Button.png"; sourceTree = "<group>"; };
 		B8D9E5C21C1E299F00ADF237 /* Play-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Button.png"; sourceTree = "<group>"; };
 		B8D9E5C31C1E299F00ADF237 /* Pause-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause-Button.png"; sourceTree = "<group>"; };
 		B8D9E5C71C1E2AC500ADF237 /* WTH-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WTH-Button.png"; sourceTree = "<group>"; };
@@ -129,6 +130,9 @@
 		B8DE89C41C1C90B000800201 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		B8DE89C71C1C90CC00800201 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		B8DE89C81C1C90CC00800201 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		B8EAF3AA1C1EB1F8003B174A /* Start-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Start-Button.png"; sourceTree = "<group>"; };
+		B8EAF3AB1C1EB1F8003B174A /* Finish-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Finish-Button.png"; sourceTree = "<group>"; };
+		B8EAF3AC1C1EB1F8003B174A /* Stop-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop-Button.png"; sourceTree = "<group>"; };
 		B8EFE5F71C13D0580008F2BD /* MyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFE5FB1C13D0580008F2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8EFE5FC1C13D0580008F2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,13 +196,15 @@
 		B824C0ED1C186EE500C6A1D3 /* Design Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8EAF3AA1C1EB1F8003B174A /* Start-Button.png */,
+				B8EAF3AB1C1EB1F8003B174A /* Finish-Button.png */,
+				B8EAF3AC1C1EB1F8003B174A /* Stop-Button.png */,
 				B8DE89C11C1C62CA00800201 /* BMIResults.png */,
 				B8DE89C71C1C90CC00800201 /* Icon-76.png */,
 				B8DE89C81C1C90CC00800201 /* Icon-76@2x.png */,
 				B85528141C1E213E00D89BFA /* facebook-share-button.png */,
 				B85528151C1E213E00D89BFA /* twitter-share-button.png */,
 				B8DE89C31C1C90B000800201 /* Icon-60@2x.png */,
-				B8D9E5C11C1E299F00ADF237 /* Start-Time-Button.png */,
 				B8D9E5C21C1E299F00ADF237 /* Play-Button.png */,
 				B8D9E5C31C1E299F00ADF237 /* Pause-Button.png */,
 				B8DE89C41C1C90B000800201 /* Icon-60@3x.png */,
@@ -398,12 +404,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8DE89C91C1C90CC00800201 /* Icon-76.png in Resources */,
+				B8EAF3AF1C1EB1F8003B174A /* Stop-Button.png in Resources */,
 				B8D9E5C61C1E299F00ADF237 /* Pause-Button.png in Resources */,
 				B8DE89BA1C1BE2C100800201 /* start@3x.png in Resources */,
 				B85528131C1E1ADA00D89BFA /* calculate.png in Resources */,
 				B8DE89C51C1C90B000800201 /* Icon-60@2x.png in Resources */,
-				B8D9E5C41C1E299F00ADF237 /* Start-Time-Button.png in Resources */,
 				B8DE89C21C1C62CA00800201 /* BMIResults.png in Resources */,
+				B8EAF3AE1C1EB1F8003B174A /* Finish-Button.png in Resources */,
 				B8DE89CA1C1C90CC00800201 /* Icon-76@2x.png in Resources */,
 				B8EFE6071C13D0590008F2BD /* LaunchScreen.xib in Resources */,
 				B85528171C1E213E00D89BFA /* twitter-share-button.png in Resources */,
@@ -419,6 +426,7 @@
 				B855280A1C1E0C8A00D89BFA /* Play@3x.png in Resources */,
 				B8D9E5CA1C1E2AC500ADF237 /* BMI-Button.png in Resources */,
 				B85528081C1E0C8A00D89BFA /* Play.png in Resources */,
+				B8EAF3AD1C1EB1F8003B174A /* Start-Button.png in Resources */,
 				B8DE89C01C1BE35900800201 /* BMI@3x.png in Resources */,
 				B85528091C1E0C8A00D89BFA /* Play@2x.png in Resources */,
 				B8DE89BE1C1BE35900800201 /* BMI.png in Resources */,
