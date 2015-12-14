@@ -29,6 +29,8 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     var managedObjectContext: NSManagedObjectContext?
     var run: Run!
+    var seconds = 0.0
+    var distance = 0.0
     
     lazy var locationManager: CLLocationManager = {
         var _locationManager = CLLocationManager()
@@ -44,13 +46,12 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     lazy var locations = [CLLocation]()
     lazy var timer = NSTimer()
     
-    var seconds = 0.0
-    var distance = 0.0
-    
     //MARK: Load functions
     
     override func viewWillAppear(animated: Bool) {
         locationManager.requestAlwaysAuthorization()
+        
+        finishButton.hidden = true
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -62,7 +63,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         seconds = 0.0
         distance = 0.0
         locations.removeAll(keepCapacity: false)
-        finishButton.hidden = true
         timer = NSTimer.scheduledTimerWithTimeInterval(1,
             target: self,
             selector: "eachSecond:",
@@ -94,6 +94,8 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func stopClicked(sender: UIButton) {
+        stopButton.hidden = true
+        finishButton.hidden = false
         let actionSheet = UIActionSheet(title: "Run Stopped", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Discard")
         actionSheet.actionSheetStyle = .Default
         actionSheet.showInView(view)
