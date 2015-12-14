@@ -157,7 +157,7 @@ extension RunViewController: MKMapViewDelegate {
         
         let polyline = overlay as! MKPolyline
         let renderer = MKPolylineRenderer(polyline: polyline)
-        renderer.strokeColor = UIColor.blueColor()
+        renderer.strokeColor = UIColor.redColor()
         renderer.lineWidth = 3
         return renderer
     }

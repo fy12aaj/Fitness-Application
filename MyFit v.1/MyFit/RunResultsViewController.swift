@@ -11,7 +11,6 @@ import Social
 import CoreLocation
 import HealthKit
 import MapKit
-import Social
 
 class RunResultsViewController: UIViewController {
     var run: Run!
